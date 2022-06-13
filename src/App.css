@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+.custom-bg-auth {
+    background-image: url('./images/register.png');
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-space {
+    height: 100vh;
+    width: 100%;
+    margin: 0 0 0 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-space-2 {
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-border-auth {
+    border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-button-auth {
+    background-color: #7126B5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-font-auth {
+    color: #7126B5;
+}
+
+.custom-font-1 {
+    font-size: 14px;
+}
+
+.custom-font-2 {
+    font-size: 12px;
 }
