@@ -4,7 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './layouts/Register';
 import Login from './layouts/Login';
 import LayoutInfoProfile from './layouts/LayoutInfoProfile';
-import LayoutInfoProductAdd from './layouts/LayoutInfoProductAdd';
+import LayoutInfoProductAdd from './layouts/LayoutInfoProductAdd[Seller]';
+import LayoutDashboardProductSeller from './layouts/LayoutDashboardProduct[Seller]';
+import LayoutDashboardProductBuyer from './layouts/LayoutDashboardProduct[Buyer]';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Route path={'/login'} element={<Login />} />
       <Route path={'/info-profile'} element={<LayoutInfoProfile />} />
       <Route path={'/info-product-add'} element={<LayoutInfoProductAdd />} />
+      <Route path={'/dashboard-product-seller'} element={<LayoutDashboardProductSeller />} />
+      <Route path={'/dashboard-product-buyer'} element={<LayoutDashboardProductBuyer />} />
     </Routes>
     </BrowserRouter>
   );

@@ -5,6 +5,29 @@
 
 /* ======================================== */
 
+/* NAVBAR */
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+  
+/* style glyph */
+.inner-addon .custom-fa {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .custom-fa  { left:  0px;}
+.right-addon .custom-fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/* ========================================= */
+
 .custom-logo-navbar {
     width: 100px;
     height: 34px;
@@ -70,3 +93,6 @@
     color: #7126B5;
 }
 
+.custom-font-5 {
+    font-size: 10px;
+}

@@ -5,7 +5,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
 
-export default function InfoProductAdd() {
+export default function InfoProductAddSeller() {
   return (
     <div className="container">
       <div className="w-75 mx-auto">
