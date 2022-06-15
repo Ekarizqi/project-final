@@ -54,6 +54,15 @@
     border-style: dashed ;
 }
 
+.custom-bg-notif {
+    background-color: #EEEEEE;
+}
+
+.custom-space-harga-tawar {
+    width: 20%;
+    height: 43%;
+}
+
 .custom-space {
     height: 100vh;
     width: 100%;
@@ -95,4 +104,8 @@
 
 .custom-font-5 {
     font-size: 10px;
+}
+
+.custom-font-6 {
+    font-size: 20px;
 }
