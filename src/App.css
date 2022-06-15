@@ -58,9 +58,17 @@
     background-color: #EEEEEE;
 }
 
+.custom-bg-notif-2 {
+    color: #FA2C5A;
+}
+
 .custom-space-harga-tawar {
     width: 20%;
     height: 43%;
+}
+
+.custom-space-harga-tawar-2 {
+    width: 24%;
 }
 
 .custom-space {
@@ -79,6 +87,10 @@
 
 .custom-button-auth {
     background-color: #7126B5;
+}
+
+.custom-button-auth-2 {
+    background-color: #D0D0D0;
 }
 
 .custom-font-auth {

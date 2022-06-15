@@ -8,6 +8,8 @@ import LayoutInfoProductAdd from './layouts/LayoutInfoProductAdd[Seller]';
 import LayoutDashboardProductSeller from './layouts/LayoutDashboardProduct[Seller]';
 import LayoutDashboardProductBuyer from './layouts/LayoutDashboardProduct[Buyer]';
 import NotifikasiHargaTawar from './components/NotifikasiHargaTawar[Buyer]';
+import LayoutDashboardProductNotifTawarBuyer from './layouts/LayoutDashboardProductNotifTawar[Buyer]';
+import NotifikasiTawarBerhasil from './components/NotifikasiTawarBerhasil[Buyer]';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
       <Route path={'/info-product-add'} element={<LayoutInfoProductAdd />} />
       <Route path={'/dashboard-product-seller'} element={<LayoutDashboardProductSeller />} />
       <Route path={'/dashboard-product-buyer'} element={<LayoutDashboardProductBuyer />} />
+      <Route path={'/dashboard-product-notif-tawar-buyer'} element={<LayoutDashboardProductNotifTawarBuyer />} />
       <Route path={'/notifikasi-harga-tawar'} element={<NotifikasiHargaTawar />} />
+      <Route path={'/notifikasi-tawar-berhasil'} element={<NotifikasiTawarBerhasil />} />
     </Routes>
     </BrowserRouter>
   );
