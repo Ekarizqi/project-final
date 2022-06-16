@@ -1,12 +1,12 @@
 import React from "react";
 import NavbarInfoPenawar from "../components/NavbarInfoPenawar";
-import InfoProductTawar from "../pages/InfoProductTawar";
+import InfoProductHubungi from "../pages/InfoProductHubungi[Seller]";
 
-export default function LayoutInfoProductTawar() {
+export default function LayoutInfoProductHubungi() {
     return(
         <>
             <NavbarInfoPenawar />
-            <InfoProductTawar />
+            <InfoProductHubungi />
         </>
     );
 }

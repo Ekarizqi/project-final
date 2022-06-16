@@ -11,13 +11,21 @@ export default function NotifikasiTawarBerhasil() {
         </div>
 
         <div className="col-md-10 pl-5">
-          <p className="text-muted custom-font-5">
-            Penawaran produk &nbsp; &nbsp; &nbsp; &nbsp;
-            <span className="text-muted custom-font-5">
-              20 Apr, 14:04{" "}
-              <FontAwesomeIcon icon={faCircle} className="custom-bg-notif-2" />
-            </span>
-          </p>
+          <div className="row ">
+            <div className="col-md-6">
+              <span className="text-muted custom-font-5">Penawaran produk</span>
+            </div>
+            <div className="col-md-6 text-right">
+              <span className="text-muted custom-font-5">
+                20 Apr, 14:04 &nbsp;
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  className="custom-bg-notif-2"
+                />
+              </span>
+            </div>
+          </div>
+
           <p className="text-dark custom-font-1">Jam Tangan Casio</p>
           <p className="text-dark custom-font-1">
             <s>Rp 250.000</s>
@@ -37,13 +45,21 @@ export default function NotifikasiTawarBerhasil() {
         </div>
 
         <div className="col-md-10 pl-5">
-          <p className="text-muted custom-font-5">
-            Penawaran produk &nbsp; &nbsp; &nbsp; &nbsp;
-            <span className="text-muted custom-font-5">
-              20 Apr, 14:04{" "}
-              <FontAwesomeIcon icon={faCircle} className="custom-bg-notif-2" />
-            </span>
-          </p>
+          <div className="row ">
+            <div className="col-md-6">
+              <span className="text-muted custom-font-5">Penawaran produk</span>
+            </div>
+            <div className="col-md-6 text-right">
+              <span className="text-muted custom-font-5">
+                20 Apr, 14:04 &nbsp;
+                <FontAwesomeIcon
+                  icon={faCircle}
+                  className="custom-bg-notif-2"
+                />
+              </span>
+            </div>
+          </div>
+
           <p className="text-dark custom-font-1">Jam Tangan Casio</p>
           <p className="text-dark custom-font-1">Rp 250.000</p>
           <p className="text-dark custom-font-1">Ditawar Rp 200.000</p>

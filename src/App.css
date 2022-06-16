@@ -85,6 +85,10 @@
     border-radius: 16px;
 }
 
+.custom-border-style {
+    border-style: dashed;
+}
+
 .custom-button-auth {
     background-color: #7126B5;
 }
