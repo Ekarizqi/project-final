@@ -27,11 +27,11 @@ export default function NotifikasiTawarBerhasil() {
           </div>
 
           <p className="text-dark custom-font-1">Jam Tangan Casio</p>
-          <p className="text-dark custom-font-1">
+          <p className="text-dark custom-font-1 custom-space-top">
             <s>Rp 250.000</s>
           </p>
-          <p className="text-dark custom-font-1">Berhasil Ditawar Rp 200.000</p>
-          <p className="text-muted custom-font-5">
+          <p className="text-dark custom-font-1 custom-space-top">Berhasil Ditawar Rp 200.000</p>
+          <p className="text-muted custom-font-5 custom-space-top">
             Kamu akan segera dihubungi penjual via whatsapp
           </p>
         </div>
@@ -61,8 +61,8 @@ export default function NotifikasiTawarBerhasil() {
           </div>
 
           <p className="text-dark custom-font-1">Jam Tangan Casio</p>
-          <p className="text-dark custom-font-1">Rp 250.000</p>
-          <p className="text-dark custom-font-1">Ditawar Rp 200.000</p>
+          <p className="text-dark custom-font-1 custom-space-top">Rp 250.000</p>
+          <p className="text-dark custom-font-1 custom-space-top">Ditawar Rp 200.000</p>
         </div>
       </div>
     </div>

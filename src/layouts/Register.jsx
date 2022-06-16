@@ -1,3 +1,5 @@
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import Form from "react-validation/build/form";
@@ -25,7 +27,7 @@ export default function Register() {
                   </label>
                   <Input
                     type="text"
-                    className="form-control p-2 custom-font-1"
+                    className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
                     placeholder="Nama Lengkap"
                   />
                 </div>
@@ -39,7 +41,7 @@ export default function Register() {
                   </label>
                   <Input
                     type="text"
-                    className="form-control p-2 custom-font-1"
+                    className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
                     placeholder="Contoh: johndee@gmail.com"
                   />
                 </div>
@@ -51,20 +53,31 @@ export default function Register() {
                   >
                     Password
                   </label>
-                  <Input
-                    type="password"
-                    className="form-control p-2 custom-font-1"
-                    placeholder="Masukkan password"
-                  />
+
+                  <div className="inner-addon right-addon">
+                    <FontAwesomeIcon
+                      icon={faEye}
+                      className="text-muted ml-2 custom-fa"
+                    />
+
+                    <Input
+                      type="password"
+                      className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
+                      placeholder="Masukkan password"
+                    />
+                  </div>
                 </div>
 
-                <button className="mt-3 form-group font-weight-bold text-white border-light py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+                <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
                   Daftar
                 </button>
                 <p className="text-center text-dark custom-font-1">
                   Sudah punya akun ? &nbsp;
                   <span>
-                    <Link to={"/login"} className="font-weight-bold custom-font-auth">
+                    <Link
+                      to={"/login"}
+                      className="font-weight-bold custom-font-auth"
+                    >
                       Masuk di sini
                     </Link>
                   </span>

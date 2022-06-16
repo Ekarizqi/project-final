@@ -9,9 +9,12 @@ export default function InfoProductAddSeller() {
   return (
     <div className="container">
       <div className="w-75 mx-auto">
-        <FontAwesomeIcon icon={faArrowLeft} className="custom-font-3" />
+        <FontAwesomeIcon
+          icon={faArrowLeft}
+          className="custom-font-3 position-absolute"
+        />
         <span>
-          <div className="mx-auto w-50 py-4">
+          <div className="mx-auto w-50">
             <Form>
               <div className="form-group mb-3">
                 <label
@@ -22,7 +25,7 @@ export default function InfoProductAddSeller() {
                 </label>
                 <Input
                   type="text"
-                  className="form-control p-2 custom-font-1"
+                  className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
                   placeholder="Nama Produk"
                 />
               </div>
@@ -36,7 +39,7 @@ export default function InfoProductAddSeller() {
                 </label>
                 <Input
                   type="text"
-                  className="form-control p-2 custom-font-1"
+                  className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
                   placeholder="Rp 0,00"
                 />
               </div>
@@ -51,7 +54,7 @@ export default function InfoProductAddSeller() {
                 <div className="row">
                   <div className="col-md-12">
                     <select
-                      className="form-select text-muted w-100 px-1 py-2 border rounded"
+                      className="form-select text-muted w-100 px-4 py-2 border custom-border-auth"
                       aria-label="Default select example"
                     >
                       <option defaultValue={{ value: null }}>
@@ -76,7 +79,7 @@ export default function InfoProductAddSeller() {
                 </label>
                 <Input
                   type="text"
-                  className="form-control p-2 pt-4 pb-5 custom-font-1"
+                  className="form-control p-2 pl-4 pt-4 pb-5 custom-font-1 custom-border-auth"
                   placeholder="Contoh: Jalan Ikan Hiu 33"
                 />
               </div>
@@ -88,22 +91,26 @@ export default function InfoProductAddSeller() {
                 >
                   Foto Produk
                 </label>
-                <div className="text-center py-4 custom-bg-photo-product">
+                <div className="text-center ml-1 row align-items-center custom-bg-photo-product">
                   <FontAwesomeIcon
                     icon={faPlusSquare}
-                    className="custom-font-3"
+                    className="m-auto custom-font-3"
                   />
                 </div>
               </div>
 
-              <div className="">
-                <button className="mt-3 form-group font-weight-bold py-2 w-50 custom-border-auth custom-font-1">
-                  Preview
-                </button>
+              <div className="row">
+                <div className="col-md-6">
+                  <button className="mt-3 form-group font-weight-bold py-2 w-100 custom-border-button custom-border-auth custom-font-1">
+                    Preview
+                  </button>
+                </div>
 
-                <button className="mt-3 form-group font-weight-bold text-white border-light py-2 w-50 custom-border-auth custom-button-auth custom-font-1">
-                  Terbitkan
-                </button>
+                <div className="col-md-6">
+                  <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+                    Terbitkan
+                  </button>
+                </div>
               </div>
             </Form>
           </div>

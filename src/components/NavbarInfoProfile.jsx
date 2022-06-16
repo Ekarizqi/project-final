@@ -7,8 +7,8 @@ export default function NavbarInfoProfile() {
     <nav className="navbar navbar-light white">
       <div className="container">
         <a className="navbar-brand custom-logo-navbar" href="#"></a>
-        <span className="w-100 text-center">
-          <a className="text-dark">Lengkapi Info Akun</a>
+        <span className="text-center m-auto">
+          <span className="text-dark custom-title-nav">Lengkapi Info Akun</span>
         </span>
       </div>
     </nav>

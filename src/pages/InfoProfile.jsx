@@ -8,7 +8,7 @@ export default function InfoProfile() {
   return (
     <div className="container">
       <div className="w-75 mx-auto">
-        <FontAwesomeIcon icon={faArrowLeft} className="custom-font-3" />
+        <FontAwesomeIcon icon={faArrowLeft} className="custom-font-3 position-absolute" />
         <span>
           <div className="mx-auto text-center py-4 custom-bg-photo-profile">
             <FontAwesomeIcon icon={faCamera} className="custom-font-4" />
@@ -27,7 +27,7 @@ export default function InfoProfile() {
             </label>
             <Input
               type="text"
-              className="form-control p-2 custom-font-1"
+              className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
               placeholder="Nama"
             />
           </div>
@@ -42,7 +42,7 @@ export default function InfoProfile() {
             <div className="row">
               <div className="col-md-12">
                 <select
-                  className="form-select text-muted w-100 px-1 py-2 border rounded"
+                  className="form-select text-muted w-100 px-4 py-2 border custom-border-auth"
                   aria-label="Default select example"
                 >
                   <option defaultValue={{ value: null }}>Pilih Kota</option>
@@ -65,7 +65,7 @@ export default function InfoProfile() {
             </label>
             <Input
               type="text"
-              className="form-control p-2 pt-4 pb-5 custom-font-1"
+              className="form-control p-2 pt-4 pl-4  pb-5 custom-border-auth custom-font-1"
               placeholder="Contoh: Jalan Ikan Hiu 33"
             />
           </div>
@@ -79,7 +79,7 @@ export default function InfoProfile() {
             </label>
             <Input
               type="text"
-              className="form-control p-2 custom-font-1"
+              className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
               placeholder="Contoh: +628123456789"
             />
           </div>
