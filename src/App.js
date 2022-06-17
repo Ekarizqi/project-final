@@ -13,6 +13,7 @@ import NotifikasiTawarBerhasil from './components/NotifikasiTawarBerhasil[Buyer]
 import LayoutInfoProductTawar from './layouts/LayoutInfoProductTawar[Seller]';
 import LayoutInfoProductHubungi from './layouts/LayoutInfoProductHubungi[Seller]';
 import LayoutDashboardJualSeller from './layouts/LayoutDashboardJual[Seller]';
+import NotifikasiHargaTawarSeller from './components/NotifikasiHargaTawar[Seller]';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <Route path={'/notifikasi-tawar-berhasil'} element={<NotifikasiTawarBerhasil />} />
       <Route path={'/info-product-tawar'} element={<LayoutInfoProductTawar />} />
       <Route path={'/info-product-hubungi'} element={<LayoutInfoProductHubungi />} />
+      <Route path={'/notifikasi-tawar-match'} element={<NotifikasiHargaTawarSeller />} />
     </Routes>
     </BrowserRouter>
   );
