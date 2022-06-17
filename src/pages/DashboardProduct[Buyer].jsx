@@ -40,18 +40,18 @@ export default function DashboardProductBuyer() {
               <p className="text-muted custom-font-1 custom-space-top">Aksesoris</p>
               <p className="text-dark custom-space-top">Rp 250.000</p>
 
-              <button className="mt-3 form-group font-weight-bold text-white border-light py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+              <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
                 Saya tertarik dan ingin nego
               </button>
             </div>
 
             <div className="border mt-3 px-2 py-2 custom-border-auth">
               <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-3">
                   <img src={require("../images/seller.png")} alt="seller" />
                 </div>
 
-                <div className="col-md-10 pl-4">
+                <div className="col-md-9">
                   <p className="text-dark font-weight-bold custom-font-1">Nama Penjual</p>
                   <p className="text-muted custom-font-5 custom-space-top">Kota</p>
                 </div>

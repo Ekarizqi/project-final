@@ -7,9 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function NotifikasiHargaTawar() {
   return (
     <div className="mx-auto my-5 px-4 py-4 border custom-border-auth custom-space-harga-tawar">
-        <div className="text-right custom-font-6">
-            <FontAwesomeIcon icon={faXmarkCircle} />
-        </div>
+      <div className="text-right custom-font-6">
+        <FontAwesomeIcon icon={faXmarkCircle} />
+      </div>
+
       <p className="text-dark font-weight-bold custom-font-1">
         Masukkan Harga Tawarmu
       </p>
@@ -21,13 +22,17 @@ export default function NotifikasiHargaTawar() {
 
       <div className="w-100 px-3 pt-3 border custom-bg-notif custom-border-auth">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-md-3">
             <img src={require("../images/jam_kecil.png")} alt="Jam" />
           </div>
 
-          <div className="col-md-10 pl-5">
-            <p className="text-dark font-weight-bold custom-font-1">Jam Tangan Casio</p>
-            <p className="text-dark custom-font-1 custom-space-top">Rp 250.000</p>
+          <div className="col-md-9">
+            <p className="text-dark font-weight-bold custom-font-1">
+              Jam Tangan Casio
+            </p>
+            <p className="text-dark custom-font-1 custom-space-top">
+              Rp 250.000
+            </p>
           </div>
         </div>
       </div>

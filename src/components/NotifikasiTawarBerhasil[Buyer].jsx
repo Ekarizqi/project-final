@@ -7,10 +7,10 @@ export default function NotifikasiTawarBerhasil() {
     <div className="mx-auto my-5 py-3 px-3 border custom-border-auth custom-space-harga-tawar-2">
       <div className="row">
         <div className="col-md-2">
-          <img src={require("../images/jam_kecil.png")} alt="Jam" />
+          <img src={require("../images/jam_kecil.png")} alt="Jam" className="mt-2" />
         </div>
 
-        <div className="col-md-10 pl-5">
+        <div className="col-md-10">
           <div className="row ">
             <div className="col-md-6">
               <span className="text-muted custom-font-5">Penawaran produk</span>
@@ -41,10 +41,10 @@ export default function NotifikasiTawarBerhasil() {
 
       <div className="row">
         <div className="col-md-2">
-          <img src={require("../images/jam_kecil.png")} alt="Jam" />
+          <img src={require("../images/jam_kecil.png")} alt="Jam" className="mt-2" />
         </div>
 
-        <div className="col-md-10 pl-5">
+        <div className="col-md-10">
           <div className="row ">
             <div className="col-md-6">
               <span className="text-muted custom-font-5">Penawaran produk</span>

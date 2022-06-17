@@ -57,7 +57,7 @@ export default function InfoProductHubungi() {
                 </button>
 
                 <button className="mt-2 form-group text-white border-0 py-2 px-4 custom-border-auth custom-button-auth custom-font-1">
-                  Hubungi di{" "}
+                  Hubungi di &nbsp;
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"

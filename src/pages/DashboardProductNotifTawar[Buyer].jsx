@@ -47,11 +47,11 @@ export default function DashboardProductNotifTawarBuyer() {
 
             <div className="border mt-3 px-2 py-2 custom-border-auth">
               <div className="row">
-                <div className="col-md-2">
+                <div className="col-md-3">
                   <img src={require("../images/seller.png")} alt="seller" />
                 </div>
 
-                <div className="col-md-10 pl-4">
+                <div className="col-md-9">
                   <p className="text-dark font-weight-bold custom-font-1">Nama Penjual</p>
                   <p className="text-muted custom-font-5 custom-space-top">Kota</p>
                 </div>

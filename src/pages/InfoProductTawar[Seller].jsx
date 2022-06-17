@@ -19,7 +19,7 @@ export default function InfoProductTawar() {
                 <div className="col-md-2">
                   <img src={profil} alt="profil" />
                 </div>
-                <div className="col">
+                <div className="col-md-10">
                   <p className="text-dark font-weight-bold custom-font-1">
                     Nama Pembeli
                   </p>
@@ -39,7 +39,7 @@ export default function InfoProductTawar() {
                 <div className="col-md-2">
                   <img src={jam_kecil} alt="foto_produk" />
                 </div>
-                <div className="col">
+                <div className="col-md-10">
                   <div className="row text-muted custom-font-5">
                     <p className="col text-muted">Penawaran Produk</p>
                     <p className="col text-right">20 Apr, 14:04</p>
