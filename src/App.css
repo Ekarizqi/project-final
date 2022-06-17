@@ -1,6 +1,6 @@
 /* NAVBAR INFO  */
 .navbar.navbar-8 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=000000');
   }
 
 /* ======================================== */
@@ -55,11 +55,15 @@
 }
 
 .custom-bg-notif {
-    background-color: #EEEEEE;
+    background-color: #EEEEEE !important;
 }
 
 .custom-bg-notif-2 {
     color: #FA2C5A;
+}
+
+.custom-space-top {
+    margin-top: -10px !important;
 }
 
 .custom-space-harga-tawar {
@@ -81,8 +85,21 @@
     height: 100vh;
 }
 
+.custom-space-3 {
+    width: 444px;
+}
+
 .custom-border-auth {
-    border-radius: 16px;
+    border-radius: 16px !important;
+}
+
+.custom-border-button {
+    border: none;
+    border: 1px solid #7126B5;
+}
+
+.custom-title-nav{
+    margin-left: -110px !important;
 }
 
 .custom-border-style {

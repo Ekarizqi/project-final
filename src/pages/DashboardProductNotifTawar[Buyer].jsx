@@ -1,7 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Carousel } from "react-responsive-carousel";
 
 export default function DashboardProductNotifTawarBuyer() {
   return (
@@ -9,26 +7,40 @@ export default function DashboardProductNotifTawarBuyer() {
       <div className="w-75 mx-auto">
         <div className="row">
           <div className="col-md-8">
-            <div>
-              <img
-                src={require("../images/jam.png")}
-                alt="jam"
-                className="w-100"
-              />
-              <FontAwesomeIcon
-                icon={faCircleChevronRight}
-                className="custom-font-3"
-              />
-            </div>
+          <Carousel showArrows={true} showThumbs={false} showStatus={false}>
+              <div>
+                <img
+                  src={require("../images/jam.png")}
+                  alt="jam"
+                  className="w-100"
+                />
+              </div>
+
+              <div>
+                <img
+                  src={require("../images/jam.png")}
+                  alt="jam"
+                  className="w-100"
+                />
+              </div>
+
+              <div>
+                <img
+                  src={require("../images/jam.png")}
+                  alt="jam"
+                  className="w-100"
+                />
+              </div>
+            </Carousel>
           </div>
 
           <div className="col-md-4">
             <div className="border px-3 py-3 custom-border-auth">
               <p className="text-dark font-weight-bold">Jam Tangan Casio</p>
-              <p className="text-muted custom-font-1">Aksesoris</p>
-              <p className="text-dark">Rp 250.000</p>
+              <p className="text-muted custom-font-1 custom-space-top">Aksesoris</p>
+              <p className="text-dark custom-space-top">Rp 250.000</p>
 
-              <button className="mt-3 form-group font-weight-bold text-white border-light py-2 w-100 custom-border-auth custom-button-auth-2 custom-font-1">
+              <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth-2 custom-font-1">
                 Menunggu respon penjual
               </button>
             </div>
@@ -39,9 +51,9 @@ export default function DashboardProductNotifTawarBuyer() {
                   <img src={require("../images/seller.png")} alt="seller" />
                 </div>
 
-                <div className="col-md-10 pl-5">
+                <div className="col-md-10 pl-4">
                   <p className="text-dark font-weight-bold custom-font-1">Nama Penjual</p>
-                  <p className="text-muted custom-font-5">Kota</p>
+                  <p className="text-muted custom-font-5 custom-space-top">Kota</p>
                 </div>
               </div>
             </div>

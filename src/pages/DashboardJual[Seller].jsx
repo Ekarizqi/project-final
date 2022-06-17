@@ -26,11 +26,11 @@ export default function DashboardJualSeller() {
               <p className="text-dark font-weight-bold custom-font-1">
                 Nama Penjual
               </p>
-              <p className="text-muted custom-font-5">Kota</p>
+              <p className="text-muted custom-font-5 custom-space-top">Kota</p>
             </div>
 
             <div className="col-md-2 text-right">
-              <button className="mt-1 form-group font-weight-bold py-2 w-50 custom-border-auth custom-font-1">
+              <button className="mt-1 form-group font-weight-bold py-2 w-50 custom-border-button custom-border-auth custom-font-2">
                 Edit
               </button>
             </div>
@@ -57,7 +57,7 @@ export default function DashboardJualSeller() {
               </div>
               <hr />
 
-              <div className="d-flex justify-content-between custom-font-auth">
+              <div className="d-flex justify-content-between">
                 <div className="row align-items-center">
                   <div className="col-md-12">
                     <span className="mr-2 text-muted">
@@ -72,7 +72,7 @@ export default function DashboardJualSeller() {
               </div>
               <hr />
 
-              <div className="d-flex justify-content-between custom-font-auth">
+              <div className="d-flex justify-content-between">
                 <div className="row align-items-center">
                   <div className="col-md-12">
                     <span className="mr-2 text-muted">
@@ -91,12 +91,14 @@ export default function DashboardJualSeller() {
           <div className="col-md-8">
             <div className="row">
               <div className="col-md-4">
-                <div className="w-100 h-100 text-muted text-center pt-5 custom-border-style custom-border-auth">
+                <div className="w-100 h-100 mx-auto text-muted py-5 row align-items-center custom-border-style custom-border-auth">
+                  <div className="col-md-12 text-center">
                   <FontAwesomeIcon
                     icon={faPlusSquare}
                     className="custom-font-3"
                   />
                   <p className="custom-font-2">Tambah Produk</p>
+                  </div>
                 </div>
               </div>
 

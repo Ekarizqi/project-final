@@ -27,7 +27,7 @@ export default function NotifikasiHargaTawar() {
 
           <div className="col-md-10 pl-5">
             <p className="text-dark font-weight-bold custom-font-1">Jam Tangan Casio</p>
-            <p className="text-dark custom-font-1">Rp 250.000</p>
+            <p className="text-dark custom-font-1 custom-space-top">Rp 250.000</p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function NotifikasiHargaTawar() {
           />
         </div>
 
-        <button className="mt-1 form-group font-weight-bold text-white border-light py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+        <button className="mt-1 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
           Kirim
         </button>
       </Form>

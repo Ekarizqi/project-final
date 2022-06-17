@@ -2,13 +2,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-export default function NavbarInfoPenawar() {
+export default function NavbarInfoProfile() {
   return (
     <nav className="navbar navbar-light white">
       <div className="container">
         <a className="navbar-brand custom-logo-navbar" href="#"></a>
-        <span className="w-100 text-center">
-          <a className="text-dark">Info Penawar</a>
+        <span className="text-center m-auto">
+          <span className="text-dark custom-title-nav">Info Penawar</span>
         </span>
       </div>
     </nav>
