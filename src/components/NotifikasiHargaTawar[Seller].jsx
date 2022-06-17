@@ -12,7 +12,7 @@ export default function NotifikasiHargaTawarSeller() {
           <FontAwesomeIcon icon={faXmarkCircle} />
         </div>
 
-        <p className="text-dark font-weight-bold custom-font-1">
+        <p className="mt-2 text-dark font-weight-bold custom-font-1">
           Yeay kamu berhasil mendapat harga yang sesuai
         </p>
 
