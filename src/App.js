@@ -17,6 +17,7 @@ import LayoutDashboardJualSeller from "./layouts/LayoutDashboardJual[Seller]";
 import LayoutDashboardJualProductSeller from "./layouts/LayoutDashboardJualProduct[Seller]";
 import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDiminati[Seller]";
 import NotifikasiHargaTawarSeller from "./components/NotifikasiHargaTawar[Seller]";
+import NotifikasiStatusPenjualan from "./components/NotifikasiStatusPenjualan[Seller]";
 
 function App() {
   return (
@@ -70,6 +71,10 @@ function App() {
           path={"/info-product-hubungi"}
           element={<LayoutInfoProductHubungi />}
         />
+        <Route 
+          path={"/notifikasi-status-penjualan"}
+          element={<NotifikasiStatusPenjualan />}
+         />
       </Routes>
     </BrowserRouter>
   );
