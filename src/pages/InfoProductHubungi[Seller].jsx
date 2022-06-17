@@ -6,7 +6,7 @@ import jam_kecil from "../images/jam_kecil.png";
 
 export default function InfoProductHubungi() {
   return (
-    <div className="container">
+    <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
         <FontAwesomeIcon
           icon={faArrowLeft}

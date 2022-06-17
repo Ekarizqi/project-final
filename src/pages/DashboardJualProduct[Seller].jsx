@@ -10,7 +10,7 @@ import {
   
   export default function DashboardJualProductSeller() {
     return (
-      <div className="container mt-4">
+      <div className="container mt-5 pt-4">
         <div className="w-75 mx-auto">
           <p className="text-dark font-weight-bold custom-font-6">
             Daftar Jual Saya

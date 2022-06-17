@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-light navbar-8 white">
+    <nav className="navbar navbar-expand-sm navbar-white bg-white fixed-top navbar-8">
       <div className="container">
         <div className="d-flex">
           <a className="navbar-brand custom-logo-navbar" href="#"></a>

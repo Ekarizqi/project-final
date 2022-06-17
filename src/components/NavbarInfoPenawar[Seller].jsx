@@ -4,7 +4,7 @@ import React from "react";
 
 export default function NavbarInfoProfile() {
   return (
-    <nav className="navbar navbar-light white">
+    <nav className="navbar navbar-expand-sm navbar-white bg-white fixed-top">
       <div className="container">
         <a className="navbar-brand custom-logo-navbar" href="#"></a>
         <span className="text-center m-auto">

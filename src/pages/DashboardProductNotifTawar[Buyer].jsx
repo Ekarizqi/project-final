@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function DashboardProductNotifTawarBuyer() {
   return (
-    <div className="container mt-4">
+    <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
         <div className="row">
           <div className="col-md-8">

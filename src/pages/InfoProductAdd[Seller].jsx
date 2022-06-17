@@ -7,7 +7,7 @@ import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
 
 export default function InfoProductAddSeller() {
   return (
-    <div className="container">
+    <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
         <FontAwesomeIcon
           icon={faArrowLeft}
