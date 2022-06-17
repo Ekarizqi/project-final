@@ -1,21 +1,25 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Register from "./layouts/Register";
-import Login from "./layouts/Login";
-import LayoutInfoProfile from "./layouts/LayoutInfoProfile";
-import LayoutInfoProductAdd from "./layouts/LayoutInfoProductAdd[Seller]";
-import LayoutDashboardProductSeller from "./layouts/LayoutDashboardProduct[Seller]";
-import LayoutDashboardProductBuyer from "./layouts/LayoutDashboardProduct[Buyer]";
-import NotifikasiHargaTawar from "./components/NotifikasiHargaTawar[Buyer]";
-import LayoutDashboardProductNotifTawarBuyer from "./layouts/LayoutDashboardProductNotifTawar[Buyer]";
-import NotifikasiTawarBerhasil from "./components/NotifikasiTawarBerhasil[Buyer]";
-import LayoutInfoProductTawar from "./layouts/LayoutInfoProductTawar[Seller]";
-import LayoutInfoProductHubungi from "./layouts/LayoutInfoProductHubungi[Seller]";
-import LayoutDashboardJualSeller from "./layouts/LayoutDashboardJual[Seller]";
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Register from './layouts/Register';
+import Login from './layouts/Login';
+import LayoutInfoProfile from './layouts/LayoutInfoProfile';
+import LayoutInfoProductAdd from './layouts/LayoutInfoProductAdd[Seller]';
+import LayoutDashboardProductSeller from './layouts/LayoutDashboardProduct[Seller]';
+import LayoutDashboardProductBuyer from './layouts/LayoutDashboardProduct[Buyer]';
+import NotifikasiHargaTawar from './components/NotifikasiHargaTawar[Buyer]';
+import LayoutDashboardProductNotifTawarBuyer from './layouts/LayoutDashboardProductNotifTawar[Buyer]';
+import NotifikasiTawarBerhasil from './components/NotifikasiTawarBerhasil[Buyer]';
+import LayoutInfoProductTawar from './layouts/LayoutInfoProductTawar[Seller]';
+import LayoutInfoProductHubungi from './layouts/LayoutInfoProductHubungi[Seller]';
+import LayoutDashboardJualSeller from './layouts/LayoutDashboardJual[Seller]';
 import LayoutDashboardJualProductSeller from "./layouts/LayoutDashboardJualProduct[Seller]";
 import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDiminati[Seller]";
+import NotifikasiHargaTawarSeller from './components/NotifikasiHargaTawar[Seller]';
+
+
 
 function App() {
   return (
@@ -65,6 +69,7 @@ function App() {
           path={"/info-product-hubungi"}
           element={<LayoutInfoProductHubungi />}
         />
+        <Route path={'/notifikasi-tawar-match'} element={<NotifikasiHargaTawarSeller />} />
       </Routes>
     </BrowserRouter>
   );
