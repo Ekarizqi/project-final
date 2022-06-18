@@ -64,6 +64,10 @@ function App() {
           element={<NotifikasiHargaTawarSeller />}
         />
         <Route
+          path={"/notifikasi-status-penjualan"}
+          element={<NotifikasiStatusPenjualan />}
+        />
+        <Route
           path={"/info-product-tawar"}
           element={<LayoutInfoProductTawar />}
         />
@@ -71,10 +75,6 @@ function App() {
           path={"/info-product-hubungi"}
           element={<LayoutInfoProductHubungi />}
         />
-        <Route 
-          path={"/notifikasi-status-penjualan"}
-          element={<NotifikasiStatusPenjualan />}
-         />
       </Routes>
     </BrowserRouter>
   );
