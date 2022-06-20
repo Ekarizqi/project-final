@@ -19,6 +19,7 @@ import LayoutDashboardJualProductSeller from "./layouts/LayoutDashboardJualProdu
 import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDiminati[Seller]";
 import NotifikasiHargaTawarSeller from "./components/NotifikasiHargaTawar[Seller]";
 import NotifikasiStatusPenjualan from "./components/NotifikasiStatusPenjualan[Seller]";
+import NotifikasiSeller from "./components/NotifikasiSeller";
 
 function App() {
   return (
@@ -59,6 +60,10 @@ function App() {
         <Route
           path={"/notifikasi-tawar-berhasil"}
           element={<NotifikasiTawarBerhasil />}
+        />
+        <Route
+          path={"/notifikasi-seller"}
+          element={<NotifikasiSeller />}
         />
         <Route
           path={"/notifikasi-tawar-match"}
