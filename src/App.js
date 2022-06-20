@@ -19,7 +19,7 @@ import LayoutDashboardJualProductSeller from "./layouts/LayoutDashboardJualProdu
 import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDiminati[Seller]";
 import NotifikasiHargaTawarSeller from "./components/NotifikasiHargaTawar[Seller]";
 import NotifikasiStatusPenjualan from "./components/NotifikasiStatusPenjualan[Seller]";
-import NotifikasiSeller from "./components/NotifikasiSeller";
+import NotifikasiSeller from "./components/NotifikasiSeller[Seller]";
 
 function App() {
   return (

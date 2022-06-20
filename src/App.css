@@ -167,8 +167,7 @@
     }
 
     .custom-responsive-width {
-        width: 100% !important;
-        border: black solid;
+        width: 100%;
     }
 }
 

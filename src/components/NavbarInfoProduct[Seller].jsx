@@ -7,6 +7,11 @@ export default function NavbarInfoProduct() {
     <nav className="navbar navbar-expand-sm navbar-white bg-white fixed-top">
       <div className="container">
         <a className="navbar-brand custom-logo-navbar" href="#"></a>
+        <span className="text-center m-auto">
+          <span className="text-dark custom-title-nav font-weight-bold">
+            Lengkapi Detail Produk
+          </span>
+        </span>
       </div>
     </nav>
   );
