@@ -142,3 +142,33 @@
 .custom-font-6 {
     font-size: 20px;
 }
+
+/* ========================== */
+/* RESPONSIVE WEBSITE */
+
+@media only screen and (max-width: 576px) {
+    .custom-bg-auth {
+        background-image: none;
+    }
+
+    .custom-space {
+        width: 0;
+        height: 0;
+    }
+
+    .custom-responsive-space {
+        margin-top: 100px;
+    }
+
+    .custom-logo-navbar {
+        width: 100px;
+        height: 34px;
+        background-color: white;
+    }
+
+    .custom-responsive-width {
+        width: 100% !important;
+        border: black solid;
+    }
+}
+

@@ -71,7 +71,7 @@ export default function Register() {
                 <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
                   Daftar
                 </button>
-                <p className="text-center text-dark custom-font-1">
+                <p className="text-center text-dark custom-font-1 custom-responsive-space">
                   Sudah punya akun ? &nbsp;
                   <span>
                     <Link

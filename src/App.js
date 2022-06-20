@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Register from "./layouts/Register";
