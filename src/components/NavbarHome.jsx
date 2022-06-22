@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { faBell, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightToBracket, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 export default function Navbar() {
@@ -26,19 +25,8 @@ export default function Navbar() {
           </form>
         </div>
         <div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent15"
-            aria-controls="navbarSupportedContent15"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <FontAwesomeIcon icon={faBell} className="btn" />
-          <FontAwesomeIcon icon={faUser} className="btn" />
+          <FontAwesomeIcon icon={faArrowRightToBracket} />
+          <p>Login</p>
         </div>
       </div>
     </nav>

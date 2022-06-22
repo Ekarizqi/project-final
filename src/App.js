@@ -20,12 +20,14 @@ import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDimi
 import NotifikasiHargaTawarSeller from "./components/NotifikasiHargaTawar[Seller]";
 import NotifikasiStatusPenjualan from "./components/NotifikasiStatusPenjualan[Seller]";
 import NotifikasiSeller from "./components/NotifikasiSeller[Seller]";
+import LayoutHome from "./layouts/LayoutHome";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path={"/"} element={<Register />} />
+        <Route path={"/home"} element={<LayoutHome />} />
         <Route path={"/login"} element={<Login />} />
         <Route path={"/info-profile"} element={<LayoutInfoProfile />} />
         <Route path={"/info-product-add"} element={<LayoutInfoProductAdd />} />
@@ -61,9 +63,9 @@ function App() {
           path={"/notifikasi-tawar-berhasil"}
           element={<NotifikasiTawarBerhasil />}
         />
-        <Route
-          path={"/notifikasi-seller"}
-          element={<NotifikasiSeller />}
+        <Route 
+          path={"/notifikasi-seller"} 
+          element={<NotifikasiSeller />} 
         />
         <Route
           path={"/notifikasi-tawar-match"}

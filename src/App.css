@@ -58,6 +58,14 @@
     background-color: #EEEEEE !important;
 }
 
+.custom-bg-banner-1 {
+    background-color: #B6D4A8;
+}
+
+.custom-bg-banner-2 {
+    background-color: #E2D4F0;
+}
+
 .custom-bg-notif-2 {
     color: #FA2C5A;
 }
@@ -91,6 +99,10 @@
 
 .custom-border-auth {
     border-radius: 16px !important;
+}
+
+.custom-border-search {
+    border-radius: 12px !important;
 }
 
 .custom-border-button {
