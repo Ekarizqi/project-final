@@ -26,8 +26,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/"} element={<Register />} />
-        <Route path={"/home"} element={<LayoutHome />} />
+        <Route path={"/"} element={<LayoutHome />} />
+        <Route path={"/register"} element={<Register />} />
         <Route path={"/login"} element={<Login />} />
         <Route path={"/info-profile"} element={<LayoutInfoProfile />} />
         <Route path={"/info-product-add"} element={<LayoutInfoProductAdd />} />
