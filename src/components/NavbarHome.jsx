@@ -1,7 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightToBracket, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRightToBracket,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 export default function Navbar() {
@@ -24,9 +27,16 @@ export default function Navbar() {
             </div>
           </form>
         </div>
-        <div>
-          <FontAwesomeIcon icon={faArrowRightToBracket} />
-          <p>Login</p>
+        <div className="inner-addon left-addon custom-space-nav custom-button-auth custom-border-button custom-border-search">
+          <a href="#">
+            <FontAwesomeIcon
+              icon={faArrowRightToBracket}
+              className="text-white custom-fa"
+            />
+            <div className="row align-items-center">
+              <p className="text-white m-auto pb-1 pt-2 pl-3 custom-font-1">Masuk</p>
+            </div>
+          </a>
         </div>
       </div>
     </nav>
