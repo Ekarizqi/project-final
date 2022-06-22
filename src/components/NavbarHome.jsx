@@ -28,7 +28,7 @@ export default function Navbar() {
           </form>
         </div>
         <div className="inner-addon left-addon custom-space-nav custom-button-auth custom-border-button custom-border-search">
-          <a href="#">
+          <a href="/register">
             <FontAwesomeIcon
               icon={faArrowRightToBracket}
               className="text-white custom-fa"
