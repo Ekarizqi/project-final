@@ -7,7 +7,7 @@ import Input from "react-validation/build/input";
 export default function InfoProfile() {
   return (
     <div className="container mt-5 py-4">
-      <div className="w-75 mx-auto custom-responsive-width">
+      <div className="w-75 mx-auto">
         <FontAwesomeIcon icon={faArrowLeft} className="custom-font-3 position-absolute" />
         <span>
           <div className="mx-auto text-center py-4 custom-bg-photo-profile">
@@ -16,7 +16,7 @@ export default function InfoProfile() {
         </span>
       </div>
 
-      <div className="w-50 mx-auto custom-responsive-width">
+      <div className="w-50 mx-auto">
         <Form>
           <div className="form-group mb-3">
             <label

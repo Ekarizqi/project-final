@@ -192,7 +192,12 @@
     }
 
     .custom-responsive-width {
-        width: 100%;
+        width: 100% !important;
+        border: 2px solid black;
+    }
+
+    .custom-responsive-remove {
+        content: none;
     }
 }
 
