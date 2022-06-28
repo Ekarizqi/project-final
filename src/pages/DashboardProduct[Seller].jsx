@@ -42,12 +42,14 @@ export default function DashboardProductSeller() {
               </p>
               <p className="text-dark custom-space-top">Rp 250.000</p>
 
-              <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
-                Terbitkan
-              </button>
-              <button className=" form-group font-weight-bold py-2 w-100 custom-border-button custom-border-auth custom-font-1">
-                Preview
-              </button>
+              <form action="/dashboard-jual-seller">
+                <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+                  Terbitkan
+                </button>
+                <button className=" form-group font-weight-bold py-2 w-100 custom-border-button custom-border-auth custom-font-1">
+                  Preview
+                </button>
+              </form>
             </div>
 
             <div className="border mt-3 px-2 py-2 custom-border-auth">

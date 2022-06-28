@@ -15,7 +15,7 @@ export default function InfoProductAddSeller() {
         />
         <span>
           <div className="mx-auto w-50">
-            <Form>
+            <Form action={"/dashboard-product-seller"}>
               <div className="form-group mb-3">
                 <label
                   htmlFor="namaproduk"

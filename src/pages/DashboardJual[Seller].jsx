@@ -30,9 +30,11 @@ export default function DashboardJualSeller() {
             </div>
 
             <div className="col-md-2 text-right">
-              <button className="mt-1 form-group font-weight-bold py-2 w-50 custom-border-button custom-border-auth custom-font-2">
-                Edit
-              </button>
+              <form action="/info-profile">
+                <button className="mt-1 form-group font-weight-bold py-2 w-50 custom-border-button custom-border-auth custom-font-2">
+                  Edit
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -48,7 +50,12 @@ export default function DashboardJualSeller() {
                     <span className="mr-2">
                       <FontAwesomeIcon icon={faBoxOpen} />
                     </span>
-                    <span>Semua Produk</span>
+                    <a
+                      href="/dashboard-jual-seller"
+                      className="custom-font-auth"
+                    >
+                      Semua Produk
+                    </a>
                   </div>
                 </div>
                 <span>
@@ -63,7 +70,12 @@ export default function DashboardJualSeller() {
                     <span className="mr-2 text-muted">
                       <FontAwesomeIcon icon={faHeart} />
                     </span>
-                    <span className="text-dark">Diminati</span>
+                    <a
+                      href="/dashboard-jual-diminati-seller"
+                      className="text-dark"
+                    >
+                      Diminati
+                    </a>
                   </div>
                 </div>
                 <span className="text-muted">
@@ -93,11 +105,15 @@ export default function DashboardJualSeller() {
               <div className="col-md-4">
                 <div className="w-100 h-100 mx-auto text-muted py-5 row align-items-center custom-border-style custom-border-auth">
                   <div className="col-md-12 text-center">
-                  <FontAwesomeIcon
-                    icon={faPlusSquare}
-                    className="custom-font-3"
-                  />
-                  <p className="custom-font-2">Tambah Produk</p>
+                    <form action="/info-product-add">
+                      <button className="btn btn-link text-muted">
+                        <FontAwesomeIcon
+                          icon={faPlusSquare}
+                          className="custom-font-3"
+                        />
+                        <p className="custom-font-2">Tambah Produk</p>
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>

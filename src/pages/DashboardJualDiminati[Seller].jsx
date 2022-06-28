@@ -29,9 +29,11 @@ export default function DashboardJualDiminatiSeller() {
             </div>
 
             <div className="col-md-2 text-right">
-              <button className="mt-1 form-group font-weight-bold py-2 w-50 custom-border-button custom-border-auth custom-font-2">
-                Edit
-              </button>
+              <form action="/info-profile">
+                <button className="mt-1 form-group font-weight-bold py-2 w-50 custom-border-button custom-border-auth custom-font-2">
+                  Edit
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -50,7 +52,9 @@ export default function DashboardJualDiminatiSeller() {
                         className="text-muted"
                       />
                     </span>
-                    <span>Semua Produk</span>
+                    <a href="/dashboard-jual-seller" className="text-dark">
+                      Semua Produk
+                    </a>
                   </div>
                 </div>
                 <span>
@@ -65,7 +69,12 @@ export default function DashboardJualDiminatiSeller() {
                     <span className="mr-2">
                       <FontAwesomeIcon icon={faHeart} />
                     </span>
-                    <span>Diminati</span>
+                    <a
+                      href="/dashboard-jual-diminati-seller"
+                      className="custom-font-auth"
+                    >
+                      Diminati
+                    </a>
                   </div>
                 </div>
                 <span className="custom-font-auth">

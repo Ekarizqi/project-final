@@ -17,7 +17,7 @@ export default function InfoProfile() {
       </div>
 
       <div className="w-50 mx-auto">
-        <Form>
+        <Form action={"/dashboard-product-buyer"}>
           <div className="form-group mb-3">
             <label
               htmlFor="nama"

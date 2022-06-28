@@ -48,6 +48,14 @@ export default function Navbar() {
                 <li className="nav-item">
                   <Link
                     className="nav-link text-dark"
+                    to={"/"}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    className="nav-link text-dark"
                     to={"/dashboard-product-buyer"}
                   >
                     Dashboard Buyer
@@ -56,7 +64,7 @@ export default function Navbar() {
                 <li className="nav-item">
                   <Link
                     className="nav-link text-dark"
-                    to={"/dashboard-product-seller"}
+                    to={"/dashboard-jual-seller"}
                   >
                     Dashboard Seller
                   </Link>
