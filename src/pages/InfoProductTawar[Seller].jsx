@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
+import {Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import profil from "../images/profil.png";
 import jam_kecil from "../images/jam_kecil.png";
 
+import NotifikasiHargaTawarSeller from "../components/NotifikasiHargaTawar[Seller]";
+
 export default function InfoProductTawar() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
   return (
     <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
@@ -61,10 +70,13 @@ export default function InfoProductTawar() {
 
                 <button
                   className="mt-2 text-white border-0 py-2 px-3 w-25 custom-border-auth custom-button-auth custom-font-1"
-                  href="/info-product-hubungi"
+                  onClick={handleShow}
                 >
                   Terima
                 </button>
+                <Modal show={show} onHide={handleClose}>
+                  <NotifikasiHargaTawarSeller onHide={handleClose} />
+                </Modal>
               </div>
               <hr className="w-100" />
             </div>

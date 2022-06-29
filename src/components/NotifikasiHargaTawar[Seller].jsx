@@ -1,14 +1,16 @@
 import React from "react";
+import { Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import profil from "../images/profil.png";
 import jam_kecil from "../images/jam_kecil.png";
 
-export default function NotifikasiHargaTawarSeller() {
+export default function NotifikasiHargaTawarSeller({onHide}) {
   return (
-    <div className="mx-auto my-5 p-4 border custom-border-auth custom-space-harga-tawar">
-      <div>
-        <div className="text-right custom-font-6">
+    <Modal.Body>
+    <div className="w-75 mx-auto my-5 p-4 border custom-border-auth custom-space-harga-tawar">
+      
+        <div onClick={onHide} className="text-right custom-font-6">
           <FontAwesomeIcon icon={faXmarkCircle} />
         </div>
 
@@ -52,7 +54,7 @@ export default function NotifikasiHargaTawarSeller() {
             </div>
           </div>
         </div>
-
+        <a href="/info-product-hubungi">
         <button className="mt-3 text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
           Hubungi via whatsapp &nbsp;
           <svg
@@ -67,7 +69,9 @@ export default function NotifikasiHargaTawarSeller() {
             />
           </svg>
         </button>
-      </div>
+        </a>
+      
     </div>
+    </Modal.Body>
   );
 }
