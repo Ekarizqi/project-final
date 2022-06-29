@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
+import {Modal} from "react-bootstrap";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import profil from "../images/profil.png";
 import jam_kecil from "../images/jam_kecil.png";
 
+import NotifikasiStatusPenjualan from "../components/NotifikasiStatusPenjualan[Seller]";
+
 export default function InfoProductHubungi() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+
   return (
     <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
@@ -52,9 +62,13 @@ export default function InfoProductHubungi() {
                 </div>
               </div>
               <div className="text-right">
-                <button className="mt-2 mr-2 form-group py-2 px-4 custom-border-button custom-border-auth custom-font-1">
+                
+                <button onClick={handleShow} className="mt-2 mr-2 form-group py-2 px-4 custom-border-button custom-border-auth custom-font-1">
                   Status
                 </button>
+                <Modal show={show} onHide={handleClose}>
+                  <NotifikasiStatusPenjualan onHide={handleClose} />
+                </Modal>
 
                 <button className="mt-2 form-group text-white border-0 py-2 px-4 custom-border-auth custom-button-auth custom-font-1">
                   Hubungi di &nbsp;
