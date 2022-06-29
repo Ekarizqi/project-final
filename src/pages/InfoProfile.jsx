@@ -8,7 +8,12 @@ export default function InfoProfile() {
   return (
     <div className="container mt-5 py-4">
       <div className="w-75 mx-auto">
-        <FontAwesomeIcon icon={faArrowLeft} className="custom-font-3 position-absolute" />
+        <div className="custom-responsive-display">
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            className="custom-font-3 position-absolute"
+          />
+        </div>
         <span>
           <div className="mx-auto text-center py-4 custom-bg-photo-profile">
             <FontAwesomeIcon icon={faCamera} className="custom-font-4" />

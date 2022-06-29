@@ -1,4 +1,4 @@
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -8,6 +8,10 @@ import Input from "react-validation/build/input";
 export default function Register() {
   return (
     <div className="container-fluid">
+      <div className="custom-display">
+        <FontAwesomeIcon icon={faArrowLeft} className="mt-4 ml-4 custom-responsive-size" />
+      </div>
+
       <div className="row">
         <div className="col-md-6 custom-bg-auth">
           <div className="custom-space"></div>

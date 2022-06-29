@@ -8,7 +8,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
-    <div className="custom-responsive-remove">
+    <div className="custom-responsive-display">
       <nav className="navbar navbar-white bg-white fixed-top navbar-8">
         <div className="container">
           <div className="d-flex">

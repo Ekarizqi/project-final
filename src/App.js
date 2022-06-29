@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LayoutHome from "./layouts/LayoutHome";
 import Register from "./layouts/Register";
 import Login from "./layouts/Login";
 import LayoutInfoProfile from "./layouts/LayoutInfoProfile";
@@ -20,7 +21,6 @@ import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDimi
 import NotifikasiHargaTawarSeller from "./components/NotifikasiHargaTawar[Seller]";
 import NotifikasiStatusPenjualan from "./components/NotifikasiStatusPenjualan[Seller]";
 import NotifikasiSeller from "./components/NotifikasiSeller[Seller]";
-import LayoutHome from "./layouts/LayoutHome";
 
 function App() {
   return (
