@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { Carousel } from "react-responsive-carousel";
+import { Modal } from "react-bootstrap";
+import NotifikasiHargaTawar from "../components/NotifikasiHargaTawar[Buyer]";
 
 export default function DashboardProductBuyer() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
@@ -42,11 +49,20 @@ export default function DashboardProductBuyer() {
               </p>
               <p className="text-dark custom-space-top">Rp 250.000</p>
 
-              <form action="/dashboard-product-notif-tawar-buyer">
-                <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+              
+                <button onClick={handleShow} className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
                   Saya tertarik dan ingin nego
                 </button>
-              </form>
+                <Modal 
+                  size="sm"
+                  show={show} 
+                  onHide={handleClose}
+                  contentClassName="custom-border-auth"
+                  centered
+                >
+                  <NotifikasiHargaTawar onHide={handleClose} />
+                </Modal>
+              
             </div>
 
             <div className="border mt-3 px-2 py-2 custom-border-auth">

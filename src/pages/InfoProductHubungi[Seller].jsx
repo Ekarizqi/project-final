@@ -66,7 +66,13 @@ export default function InfoProductHubungi() {
                 <button onClick={handleShow} className="mt-2 mr-2 form-group py-2 px-4 custom-border-button custom-border-auth custom-font-1">
                   Status
                 </button>
-                <Modal show={show} onHide={handleClose}>
+                <Modal 
+                 size="sm"
+                 show={show} 
+                 onHide={handleClose}
+                 contentClassName="custom-border-auth"
+                 centered
+                >
                   <NotifikasiStatusPenjualan onHide={handleClose} />
                 </Modal>
 
