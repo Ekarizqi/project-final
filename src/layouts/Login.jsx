@@ -21,7 +21,7 @@ export default function Register() {
             <div className="col-md-12">
               <h4 className="text-dark font-weight-bold">Masuk</h4>
 
-              <Form action={"/info-profile"}>
+              <Form action={"/home-account"}>
                 <div className="form-group mb-3">
                   <label
                     htmlFor="email"

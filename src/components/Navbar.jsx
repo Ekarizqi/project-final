@@ -48,14 +48,6 @@ export default function Navbar() {
                 <li className="nav-item">
                   <Link
                     className="nav-link text-dark"
-                    to={"/"}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link text-dark"
                     to={"/dashboard-product-buyer"}
                   >
                     Dashboard Buyer
@@ -72,8 +64,13 @@ export default function Navbar() {
               </ul>
             </div>
 
-            <FontAwesomeIcon icon={faBell} className="btn" />
-            <FontAwesomeIcon icon={faUser} className="btn" />
+            <Link to={"/info-product-tawar"}>
+              <FontAwesomeIcon icon={faBell} className="btn" />
+            </Link>
+
+            <Link to={"/info-profile"}>
+              <FontAwesomeIcon icon={faUser} className="btn" />
+            </Link>
           </div>
         </div>
       </nav>

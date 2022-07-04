@@ -22,7 +22,7 @@ export default function InfoProfile() {
       </div>
 
       <div className="w-50 mx-auto">
-        <Form action={"/dashboard-product-buyer"}>
+        <Form action={"/home-account"}>
           <div className="form-group mb-3">
             <label
               htmlFor="nama"
