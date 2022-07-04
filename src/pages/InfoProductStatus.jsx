@@ -1,18 +1,10 @@
-import React, {useState} from "react";
-import {Modal } from "react-bootstrap";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import profil from "../images/profil.png";
 import jam_kecil from "../images/jam_kecil.png";
 
-import NotifikasiHargaTawarSeller from "../components/NotifikasiHargaTawar[Seller]";
-
-export default function InfoProductTawar() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+export default function InfoProductStatus() {
 
   return (
     <div className="container mt-5 pt-4">
@@ -28,7 +20,7 @@ export default function InfoProductTawar() {
                 <div className="col-md-2">
                   <img src={profil} alt="profil" />
                 </div>
-                <div className="col-md-10">
+                <div className="col">
                   <p className="text-dark font-weight-bold custom-font-1">
                     Nama Pembeli
                   </p>
@@ -40,7 +32,7 @@ export default function InfoProductTawar() {
             </div>
 
             <div className="mb-3 text-dark font-weight-bold custom-font-1">
-              Daftar Produkmu yang dibeli
+              Daftar Produkmu yang ditawar
             </div>
 
             <div className=" mb-3 p-2">
@@ -48,41 +40,21 @@ export default function InfoProductTawar() {
                 <div className="col-md-2">
                   <img src={jam_kecil} alt="foto_produk" />
                 </div>
-                <div className="col-md-10">
+                <div className="col">
                   <div className="row text-muted custom-font-5">
-                    <p className="col text-muted">Penawaran Produk</p>
+                    <p className="col">Berhasil terjual</p>
                     <p className="col text-right">20 Apr, 14:04</p>
                   </div>
-                  <div className="text-dark custom-space-top custom-font-1">
+                  <div className="text-dark custom-font-1 custom-space-top">
                     <p>Jam Tangan Casio</p>
                     <p className="custom-space-top">Rp 250.000</p>
-                    <p className="custom-space-top">
-                      Ditawar Rp 200.000
-                    </p>
+                    <p className="custom-space-top">Ditawar Rp 200.000</p>
                   </div>
                 </div>
               </div>
-
               <div className="text-right">
-                <button className="mt-2 mr-2 py-2 px-4 w-25 custom-border-button custom-border-auth custom-font-1">
-                  Tolak
-                </button>
-
-                <button
-                  className="mt-2 text-white border-0 py-2 px-3 w-25 custom-border-auth custom-button-auth custom-font-1"
-                  onClick={handleShow}
-                >
-                  Terima
-                </button>
-                <Modal 
-                  size="sm"
-                  show={show} 
-                  onHide={handleClose}
-                  contentClassName="custom-border-auth"
-                 centered
-                >
-                  <NotifikasiHargaTawarSeller onHide={handleClose} />
-                </Modal>
+                
+               
               </div>
               <hr className="w-100" />
             </div>

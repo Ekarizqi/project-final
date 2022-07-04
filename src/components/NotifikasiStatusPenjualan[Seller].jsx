@@ -8,7 +8,7 @@ import Input from "react-validation/build/input";
 export default function NotifikasiStatusPenjualan({onHide}) {
   return (
     <Modal.Body>
-    <div className="w-75 mx-auto my-5 p-4  border custom-border-auth custom-space-harga-tawar">
+    <div className="w-100 mx-2 p-2 custom-space-harga-tawar">
       <div onClick={onHide} className="text-right custom-font-6">
         <FontAwesomeIcon icon={faXmarkCircle} />
       </div>
@@ -17,7 +17,7 @@ export default function NotifikasiStatusPenjualan({onHide}) {
         Perbarui status penjualan produkmu
       </p>
 
-      <Form>
+      <Form action="/info-product-status">
         <div className="row">
           <div className="col-md-2">
             <Input type="radio" value="true" className="mt-2" />
