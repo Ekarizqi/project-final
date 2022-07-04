@@ -60,6 +60,14 @@ export default function Navbar() {
                   >
                     Dashboard Seller
                   </Link>
+                  <li className="nav-item">
+                  <Link
+                    className="nav-link text-dark"
+                    to={"/"}
+                  >
+                    Logout
+                  </Link>
+                </li>
                 </li>
               </ul>
             </div>
