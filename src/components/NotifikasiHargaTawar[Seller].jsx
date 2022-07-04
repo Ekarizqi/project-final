@@ -8,7 +8,7 @@ import jam_kecil from "../images/jam_kecil.png";
 export default function NotifikasiHargaTawarSeller({onHide}) {
   return (
     <Modal.Body>
-    <div className="w-75 mx-auto my-5 p-4 border custom-border-auth custom-space-harga-tawar">
+    <div className="w-100 p-2  custom-space-harga-tawar">
       
         <div onClick={onHide} className="text-right custom-font-6">
           <FontAwesomeIcon icon={faXmarkCircle} />

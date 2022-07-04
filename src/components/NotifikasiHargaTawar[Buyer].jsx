@@ -1,13 +1,15 @@
 import React from "react";
+import {Modal} from "react-bootstrap";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function NotifikasiHargaTawar() {
+export default function NotifikasiHargaTawar({onHide}) {
   return (
-    <div className="mx-auto my-5 px-4 py-4 border custom-border-auth custom-space-harga-tawar">
-      <div className="text-right custom-font-6">
+    <Modal.Body>
+    <div className="w-100 p-2 custom-space-harga-tawar">
+      <div onClick={onHide} className="text-right custom-font-6">
         <FontAwesomeIcon icon={faXmarkCircle} />
       </div>
 
@@ -37,7 +39,7 @@ export default function NotifikasiHargaTawar() {
         </div>
       </div>
 
-      <Form className="mt-3">
+      <Form action="/dashboard-product-notif-tawar-buyer" className="mt-3">
         <div className="form-group mb-3">
           <label
             htmlFor="hargatawar"
@@ -57,5 +59,6 @@ export default function NotifikasiHargaTawar() {
         </button>
       </Form>
     </div>
+    </Modal.Body>
   );
 }

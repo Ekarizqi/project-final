@@ -10,7 +10,6 @@ import LayoutInfoProfile from "./layouts/LayoutInfoProfile";
 import LayoutInfoProductAdd from "./layouts/LayoutInfoProductAdd[Seller]";
 import LayoutDashboardProductSeller from "./layouts/LayoutDashboardProduct[Seller]";
 import LayoutDashboardProductBuyer from "./layouts/LayoutDashboardProduct[Buyer]";
-import NotifikasiHargaTawar from "./components/NotifikasiHargaTawar[Buyer]";
 import LayoutDashboardProductNotifTawarBuyer from "./layouts/LayoutDashboardProductNotifTawar[Buyer]";
 import NotifikasiTawarBerhasil from "./components/NotifikasiTawarBerhasil[Buyer]";
 import LayoutInfoProductTawar from "./layouts/LayoutInfoProductTawar[Seller]";
@@ -18,9 +17,9 @@ import LayoutInfoProductHubungi from "./layouts/LayoutInfoProductHubungi[Seller]
 import LayoutDashboardJualSeller from "./layouts/LayoutDashboardJual[Seller]";
 import LayoutDashboardJualProductSeller from "./layouts/LayoutDashboardJualProduct[Seller]";
 import LayoutDashboardJualDiminatiSeller from "./layouts/LayoutDashboardJualDiminati[Seller]";
-import NotifikasiHargaTawarSeller from "./components/NotifikasiHargaTawar[Seller]";
-import NotifikasiStatusPenjualan from "./components/NotifikasiStatusPenjualan[Seller]";
+import LayoutInfoProductStatus from "./layouts/LayoutInfoProductStatus";
 import NotifikasiSeller from "./components/NotifikasiSeller[Seller]";
+
 
 function App() {
   return (
@@ -56,10 +55,6 @@ function App() {
           element={<LayoutDashboardProductNotifTawarBuyer />}
         />
         <Route
-          path={"/notifikasi-harga-tawar"}
-          element={<NotifikasiHargaTawar />}
-        />
-        <Route
           path={"/notifikasi-tawar-berhasil"}
           element={<NotifikasiTawarBerhasil />}
         />
@@ -68,20 +63,16 @@ function App() {
           element={<NotifikasiSeller />} 
         />
         <Route
-          path={"/notifikasi-tawar-match"}
-          element={<NotifikasiHargaTawarSeller />}
-        />
-        <Route
-          path={"/notifikasi-status-penjualan"}
-          element={<NotifikasiStatusPenjualan />}
-        />
-        <Route
           path={"/info-product-tawar"}
           element={<LayoutInfoProductTawar />}
         />
         <Route
           path={"/info-product-hubungi"}
           element={<LayoutInfoProductHubungi />}
+        />
+        <Route
+          path={"/info-product-status"}
+          element={<LayoutInfoProductStatus />}
         />
       </Routes>
     </BrowserRouter>
