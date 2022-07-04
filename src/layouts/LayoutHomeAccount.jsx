@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import NavbarHomeAccount from "../components/NavbarHomeAccount";
 import Home from "../pages/Home";
 
 export default function LayoutHomeAccount() {
     return (
         <>
-        <Navbar />
+        <NavbarHomeAccount />
         <Home />
         </>
     )
