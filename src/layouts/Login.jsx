@@ -63,7 +63,7 @@ export default function Register() {
                 <p className="text-center text-dark custom-font-1 custom-responsive-space">
                   Belum punya akun ? &nbsp;
                   <span>
-                    <Link to={"/"} className="font-weight-bold custom-font-auth">
+                    <Link to={"/register"} className="font-weight-bold custom-font-auth">
                       Daftar di sini
                     </Link>
                   </span>

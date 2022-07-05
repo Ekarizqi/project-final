@@ -45,6 +45,15 @@ export default function Navbar() {
               id="navbarSupportedContent15"
             >
               <ul className="navbar-nav mr-auto">
+
+              <li className="nav-item">
+                  <Link
+                    className="nav-link text-dark"
+                    to={"/home-account"}
+                  >
+                    Home
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <Link
                     className="nav-link text-dark"
