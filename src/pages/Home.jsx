@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <div className="container-fluid mt-5 pt-5">
         <div className="row">
-          <div className="col-md-2">
-            <div className="w-100 h-100 custom-bg-banner-1 custom-border-banner"></div>
+          <div className="col-md-2 p-0">
+            <div className="w-100 h-100 custom-bg-banner-1 custom-border-banner-left"></div>
           </div>
           <div className="col-md-8 mx-auto">
             <img
@@ -17,8 +17,8 @@ export default function Home() {
               className="w-100"
             />
           </div>
-          <div className="col-md-2">
-            <div className="w-100 h-100 custom-bg-banner-2 custom-border-banner"></div>
+          <div className="col-md-2 p-0">
+            <div className="w-100 h-100 custom-bg-banner-2 custom-border-banner-right"></div>
           </div>
         </div>
       </div>
@@ -26,96 +26,89 @@ export default function Home() {
       <div className="container mt-5 pt-4">
         <h6 className="text-dark font-weight-bold">Telurusi Kategori</h6>
 
-        <div className="row">
-          <div className="col-md-2">
-            <div className="inner-addon left-addon w-75 custom-button-auth custom-border-button custom-border-search">
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  className="text-white custom-fa"
-                />
-                <div className="row align-items-center">
-                  <p className="text-white m-auto pb-1 pt-2 pl-3 custom-font-1">
-                    Semua
-                  </p>
-                </div>
-              </a>
-            </div>
+        <div className="d-flex justify-content-start">
+          <div className="inner-addon left-addon mr-3 custom-space-5 custom-button-auth custom-border-button custom-border-search">
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-white custom-fa"
+              />
+              <div className="row align-items-center">
+                <p className="text-white m-auto pb-1 pt-2 pl-3 custom-font-1">
+                  Semua
+                </p>
+              </div>
+            </a>
           </div>
-          <div className="col-md-2">
-          <div className="inner-addon left-addon w-75 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  className="text-dark custom-fa"
-                />
-                <div className="row align-items-center">
-                  <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
-                    Hobi
-                  </p>
-                </div>
-              </a>
-            </div>
+
+          <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-dark custom-fa"
+              />
+              <div className="row align-items-center">
+                <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
+                  Hobi
+                </p>
+              </div>
+            </a>
           </div>
-          <div className="col-md-2">
-          <div className="inner-addon left-addon w-75 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  className="text-dark custom-fa"
-                />
-                <div className="row align-items-center">
-                  <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
-                    Kendaraan
-                  </p>
-                </div>
-              </a>
-            </div>
+
+          <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-dark custom-fa"
+              />
+              <div className="row align-items-center">
+                <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
+                  Kendaraan
+                </p>
+              </div>
+            </a>
           </div>
-          <div className="col-md-2">
-          <div className="inner-addon left-addon w-75 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  className="text-dark custom-fa"
-                />
-                <div className="row align-items-center">
-                  <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
-                    Baju
-                  </p>
-                </div>
-              </a>
-            </div>
+
+          <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-dark custom-fa"
+              />
+              <div className="row align-items-center">
+                <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
+                  Baju
+                </p>
+              </div>
+            </a>
           </div>
-          <div className="col-md-2">
-          <div className="inner-addon left-addon w-75 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  className="text-dark custom-fa"
-                />
-                <div className="row align-items-center">
-                  <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
-                    Elektronik
-                  </p>
-                </div>
-              </a>
-            </div>
+
+          <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-dark custom-fa"
+              />
+              <div className="row align-items-center">
+                <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
+                  Elektronik
+                </p>
+              </div>
+            </a>
           </div>
-          <div className="col-md-2">
-          <div className="inner-addon left-addon w-75 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  className="text-dark custom-fa"
-                />
-                <div className="row align-items-center">
-                  <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
-                    Kesehatan
-                  </p>
-                </div>
-              </a>
-            </div>
+
+          <div className="inner-addon left-addon custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                className="text-dark custom-fa"
+              />
+              <div className="row align-items-center">
+                <p className="text-dark m-auto pb-1 pt-2 pl-3 custom-font-1">
+                  Kesehatan
+                </p>
+              </div>
+            </a>
           </div>
         </div>
 

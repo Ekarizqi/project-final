@@ -101,6 +101,14 @@
     width: 444px;
 }
 
+.custom-space-4 {
+    width: 5%;
+}
+
+.custom-space-5 {
+    width: 10%;
+}
+
 .custom-border-auth {
     border-radius: 16px !important;
 }
@@ -109,8 +117,12 @@
     border-radius: 12px !important;
 }
 
-.custom-border-banner {
-    border-radius: 20px !important;
+.custom-border-banner-left {
+    border-radius: 0px 20px 20px 0px !important;
+}
+
+.custom-border-banner-right {
+    border-radius: 20px 0px 0px 20px !important;
 }
 
 .custom-border-button {
