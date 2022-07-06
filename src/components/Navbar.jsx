@@ -1,12 +1,32 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import { faBell, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
+import { logout } from "../actions/auth";
+import { useEffect } from "react";
+import EventBus from "../common/EventBus";
 
 export default function Navbar() {
+  const dispatch = useDispatch();
+
+  const logOut = useCallback(() => {
+    dispatch(logout());
+  }, [dispatch]);
+
+  useEffect(() => {
+    EventBus.on("Logout", () => {
+      logOut();
+    });
+
+    return () => {
+      EventBus.remove("logout");
+    };
+  }, [logOut]);
+
   return (
     <div className="custom-responsive-display">
       <nav className="navbar navbar-white bg-white fixed-top navbar-8">
@@ -73,6 +93,7 @@ export default function Navbar() {
                   <Link
                     className="nav-link text-dark"
                     to={"/"}
+                    onClick={logOut}
                   >
                     Logout
                   </Link>
