@@ -1,7 +1,11 @@
 /* NAVBAR INFO  */
 .navbar.navbar-8 .navbar-toggler-icon {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=000000');
-  }
+}
+
+.navbar.navbar-4 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=000000');
+}
 
 /* ======================================== */
 
@@ -66,6 +70,10 @@
     background-color: #E2D4F0;
 }
 
+.custom-bg-nav {
+    background-color: #FFE9C9;
+}
+
 .custom-bg-notif-2 {
     color: #FA2C5A;
 }
@@ -107,6 +115,10 @@
 
 .custom-space-5 {
     width: 10%;
+}
+
+.custom-space-6 {
+    width: 264px;
 }
 
 .custom-border-auth {
@@ -187,6 +199,15 @@
 /* ========================== */
 /* RESPONSIVE WEBSITE */
 
+.banner-mobile {
+    /* background-image: url('./images/banner.png'); */
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(#FFE9C9, #FFFFFF);
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
 @media only screen and (max-width: 576px) {
     .custom-display {
         display: contents;
@@ -209,15 +230,6 @@
         width: 100px;
         height: 34px;
         background-color: white;
-    }
-
-    .custom-responsive-width {
-        width: 100% !important;
-        border: 2px solid black;
-    }
-
-    .custom-responsive-width-2 {
-        width: 50% !important;
     }
 
     .custom-responsive-display {

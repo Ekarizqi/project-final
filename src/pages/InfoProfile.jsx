@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faCamera } from "@fortawesome/free-solid-svg-icons";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
+import { useMediaQuery } from 'react-responsive';
 
 export default function InfoProfile() {
+  const isMobile = useMediaQuery({minWidth: 600})
+
   return (
     <div className="container mt-5 py-4">
       <div className="w-75 mx-auto">
@@ -21,7 +24,7 @@ export default function InfoProfile() {
         </span>
       </div>
 
-      <div className="w-50 mx-auto">
+      <div className={isMobile ? 'w-50 mx-auto' : 'w-100 mx-auto px-3'}>
         <Form action={"/home-account"}>
           <div className="form-group mb-3">
             <label

@@ -8,7 +8,7 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 import { register } from "../actions/auth";
-
+import { useMediaQuery } from 'react-responsive';
 
 const required = (value) => {
   if (!value) {
@@ -101,6 +101,7 @@ export default function Register() {
     }
   };
  
+  const isMobile = useMediaQuery({minWidth: 600})
 
   return (
     <div className="container-fluid">
@@ -113,7 +114,7 @@ export default function Register() {
           <div className="custom-space"></div>
         </div>
         <div className="col-md-6">
-          <div className="row p-4 w-75 mx-auto align-items-center custom-space-2">
+          <div className={isMobile ? 'row p-4 w-75 mx-auto align-items-center custom-space-2' : 'row w-100 mx-auto align-items-center custom-space-2'}>
             <div className="col-md-12">
               <h4 className="text-dark font-weight-bold">Daftar</h4>
 

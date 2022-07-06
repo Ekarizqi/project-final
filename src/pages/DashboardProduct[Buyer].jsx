@@ -2,8 +2,11 @@ import React, {useState} from "react";
 import { Carousel } from "react-responsive-carousel";
 import { Modal } from "react-bootstrap";
 import NotifikasiHargaTawar from "../components/NotifikasiHargaTawar[Buyer]";
+import { useMediaQuery } from 'react-responsive';
 
 export default function DashboardProductBuyer() {
+  const isMobile = useMediaQuery({minWidth: 600})
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -13,7 +16,7 @@ export default function DashboardProductBuyer() {
     <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
         <div className="row">
-          <div className="col-md-8">
+          <div className={isMobile ? 'col-md-8' : 'w-100'}>
             <Carousel showArrows={true} showThumbs={false} showStatus={false}>
               <div>
                 <img
@@ -50,7 +53,7 @@ export default function DashboardProductBuyer() {
               <p className="text-dark custom-space-top">Rp 250.000</p>
 
               
-                <button onClick={handleShow} className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
+                <button onClick={handleShow} className={isMobile ? 'mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1' : 'mx-auto mt-3 form-group font-weight-bold text-white border-0 py-2 w-75 fixed-bottom custom-border-auth custom-button-auth custom-font-1'}>
                   Saya tertarik dan ingin nego
                 </button>
                 <Modal 

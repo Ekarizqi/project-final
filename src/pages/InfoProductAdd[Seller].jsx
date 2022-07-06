@@ -4,11 +4,13 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
+import { useMediaQuery } from 'react-responsive';
 
 export default function InfoProductAddSeller() {
+  const isMobile = useMediaQuery({minWidth: 600})
   return (
-    <div className="container mt-5 pt-4 custom-responsive-width">
-      <div className="w-75 mx-auto custom-responsive-width">
+    <div className="container mt-5 pt-4">
+      <div className={isMobile ? 'w-75 mx-auto' : 'w-100 mx-auto'}>
         <div className="custom-responsive-display">
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -16,7 +18,7 @@ export default function InfoProductAddSeller() {
           />
         </div>
         <span>
-          <div className="mx-auto w-50">
+          <div className={isMobile ? 'w-50 mx-auto' : 'w-100 mx-auto px-3'}>
             <Form action={"/dashboard-product-seller"}>
               <div className="form-group mb-3">
                 <label
@@ -102,13 +104,13 @@ export default function InfoProductAddSeller() {
               </div>
 
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-6">
                   <button className="mt-3 form-group font-weight-bold py-2 w-100 custom-border-button custom-border-auth custom-font-1">
                     Preview
                   </button>
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-6">
                   <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth custom-font-1">
                     Terbitkan
                   </button>

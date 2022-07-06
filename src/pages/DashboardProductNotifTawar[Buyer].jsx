@@ -1,7 +1,9 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
+import { useMediaQuery } from 'react-responsive';
 
 export default function DashboardProductNotifTawarBuyer() {
+  const isMobile = useMediaQuery({minWidth: 600})
   return (
     <div className="container mt-5 pt-4">
       <div className="w-75 mx-auto">
@@ -40,7 +42,7 @@ export default function DashboardProductNotifTawarBuyer() {
               <p className="text-muted custom-font-1 custom-space-top">Aksesoris</p>
               <p className="text-dark custom-space-top">Rp 250.000</p>
 
-              <button className="mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth-2 custom-font-1">
+              <button className={isMobile ? 'mt-3 form-group font-weight-bold text-white border-0 py-2 w-100 custom-border-auth custom-button-auth-2 custom-font-1' : 'mx-auto mt-3 form-group font-weight-bold text-white border-0 py-2 w-75 fixed-bottom custom-border-auth custom-button-auth-2 custom-font-1'}>
                 Menunggu respon penjual
               </button>
             </div>

@@ -9,6 +9,7 @@ import Input from "react-validation/build/input";
 import { useDispatch, useSelector } from "react-redux";
 import CheckButton from "react-validation/build/button";
 import { login } from "../actions/auth";
+import { useMediaQuery } from 'react-responsive';
 
 const required = (value) => {
   if (!value) {
@@ -68,12 +69,15 @@ export default function Login(props) {
       setLoading(false);
     }
   };
+  
+  const isMobile = useMediaQuery({minWidth: 600})
 
   if (isLoggedIn) {
     if (user?.roles[0] === "ROLE_ACCOUNT") {
       return <Navigate to={"/home-account"} />;
     }
   }
+  
 
   return (
     <div className="container-fluid">
@@ -89,7 +93,7 @@ export default function Login(props) {
           <div className="custom-space"></div>
         </div>
         <div className="col-md-6">
-          <div className="row p-4 w-75 mx-auto align-items-center custom-space-2">
+          <div className={isMobile ? 'row p-4 w-75 mx-auto align-items-center custom-space-2' : 'row w-100 mx-auto align-items-center custom-space-2'}>
             <div className="col-md-12">
               <h4 className="text-dark font-weight-bold">Masuk</h4>
 
