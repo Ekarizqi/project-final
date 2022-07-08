@@ -65,31 +65,30 @@ export default function Navbar() {
               id="navbarSupportedContent15"
             >
               <ul className="navbar-nav mr-auto">
-
-              <li className="nav-item">
+              <div className="nav-item">
                   <Link
                     className="nav-link text-dark"
                     to={"/home-account"}
                   >
                     Home
                   </Link>
-                </li>
-                <li className="nav-item">
+                </div>
+                <div className="nav-item">
                   <Link
                     className="nav-link text-dark"
                     to={"/dashboard-product-buyer"}
                   >
                     Dashboard Buyer
                   </Link>
-                </li>
-                <li className="nav-item">
+                </div>
+                <div className="nav-item">
                   <Link
                     className="nav-link text-dark"
                     to={"/dashboard-jual-seller"}
                   >
                     Dashboard Seller
                   </Link>
-                  <li className="nav-item">
+                  <div className="nav-item">
                   <Link
                     className="nav-link text-dark"
                     to={"/"}
@@ -97,8 +96,8 @@ export default function Navbar() {
                   >
                     Logout
                   </Link>
-                </li>
-                </li>
+                </div>
+                </div>
               </ul>
             </div>
 

@@ -7,6 +7,9 @@
     background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=000000');
 }
 
+.custom-toogler .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=000000');
+}
 /* ======================================== */
 
 /* NAVBAR */
@@ -192,6 +195,10 @@
     font-size: 20px;
 }
 
+.custom-font-7 {
+    font-size: 18px;
+}
+
 .custom-display {
     display: none;
 }
@@ -199,16 +206,35 @@
 /* ========================== */
 /* RESPONSIVE WEBSITE */
 
-.banner-mobile {
+.custom-top-minus
+{
+    margin-top: -50px;
+}
+
+.custom-overflow-x-hidden
+{
+    overflow-x: hidden;
+}
+
+.custom-scroll
+{
+    overflow-x: scroll;
+}
+
+.custom-banner-mobile {
     /* background-image: url('./images/banner.png'); */
-    height: 300px;
+    height: 150px;
     width: 100%;
     background-image: linear-gradient(#FFE9C9, #FFFFFF);
     /* background-size: contain;
     background-repeat: no-repeat; */
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
+    .control-dots{
+        margin-bottom: 70px !important;
+    }
+    
     .custom-display {
         display: contents;
     }
