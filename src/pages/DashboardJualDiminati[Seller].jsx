@@ -152,7 +152,7 @@ export default function DashboardJualDiminatiSeller() {
 
           <div className="row mt-4 flex-row flex-nowrap custom-scroll">
             <div className="col-5 mr-2 inner-addon border custom-bg-banner-2 custom-border-button custom-border-search w-100">
-              <a href="#">
+              <a href="/dashboard-jual-seller">
                 <FontAwesomeIcon
                   icon={faBoxOpen}
                   className="text-dark custom-fa"
@@ -165,7 +165,7 @@ export default function DashboardJualDiminatiSeller() {
               </a>
             </div>
             <div className="col-5 mr-2 inner-addon border custom-button-auth custom-border-button custom-border-search w-100">
-              <a href="#">
+              <a href="/dashboard-jual-diminati-seller">
                 <FontAwesomeIcon
                   icon={faHeart}
                   className="text-white custom-fa"

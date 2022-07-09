@@ -1,8 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useCallback } from "react";
+import { useDispatch } from "react-redux";
+import { logout } from "../actions/auth";
+import { useEffect } from "react";
+import EventBus from "../common/EventBus";
 
 export default function NavbarJualSellerMobile() {
+  const dispatch = useDispatch();
+
+  const logOut = useCallback(() => {
+    dispatch(logout());
+  }, [dispatch]);
+
+  useEffect(() => {
+    EventBus.on("Logout", () => {
+      logOut();
+    });
+
+    return () => {
+      EventBus.remove("logout");
+    };
+  }, [logOut]);
+
   return (
     <nav className="px-4 py-4 custom-toogler">
       <div className="row">
@@ -26,18 +46,13 @@ export default function NavbarJualSellerMobile() {
           >
             <ul className="navbar-nav mr-auto">
               <div className="nav-item active">
-                <a className="nav-link" href="#">
+                <a className="nav-link text-dark" href="#">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </div>
               <div className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </div>
-              <div className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
+                <a className="nav-link text-dark" href="/" onClick={logOut}>
+                  Logout
                 </a>
               </div>
             </ul>

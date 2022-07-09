@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
   const isMobile = useMediaQuery({ minWidth: 600 });
-  
+
   return (
     <div className="custom-overflow-x-hidden">
       {isMobile ? (
@@ -225,18 +225,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -244,18 +246,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -263,18 +267,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -282,18 +288,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -301,18 +309,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -320,18 +330,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -339,18 +351,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -358,18 +372,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -377,18 +393,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -396,18 +414,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -415,18 +435,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -434,18 +456,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -453,18 +477,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -472,18 +498,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -491,18 +519,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -510,18 +540,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -529,18 +561,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_1.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_1.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -548,18 +582,20 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <img
-                  src={require("../images/jam_midlle_2.png")}
-                  className="card-img-top"
-                  alt="jam"
-                />
-                <div className="card-body">
-                  <p className="card-text text-dark custom-font-1">
-                    Jam tangan Casion
-                  </p>
-                  <p className="text-muted custom-font-5">Aksesoris</p>
-                  <p className="text-dark custom-font-1">Rp 250.000</p>
-                </div>
+                <a href="/dashboard-product-buyer">
+                  <img
+                    src={require("../images/jam_midlle_2.png")}
+                    className="card-img-top"
+                    alt="jam"
+                  />
+                  <div className="card-body">
+                    <p className="card-text text-dark custom-font-1">
+                      Jam tangan Casion
+                    </p>
+                    <p className="text-muted custom-font-5">Aksesoris</p>
+                    <p className="text-dark custom-font-1">Rp 250.000</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

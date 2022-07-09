@@ -1,17 +1,25 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 export default function Jual() {
-  const isMobile = useMediaQuery({minWidth: 600})
+  const isMobile = useMediaQuery({ minWidth: 600 });
   return (
-    <div className={isMobile ? 'p-2 mb-3 mx-auto text-center fixed-bottom custom-space-4 custom-button-auth custom-border-search' : 'p-2 mb-3 mx-auto text-center fixed-bottom custom-space-4 custom-button-auth custom-border-search w-25 shadow-lg'}>
-      <FontAwesomeIcon
-        icon={faPlus}
-        className="text-white custom-font-1 mr-2"
-      />
-      <span className="text-white custom-font-1">Jual</span>
+    <div
+      className={
+        isMobile
+          ? "p-2 mb-3 mx-auto text-center fixed-bottom custom-space-4 custom-button-auth custom-border-search"
+          : "p-2 mb-3 mx-auto text-center fixed-bottom custom-space-4 custom-button-auth custom-border-search w-25 shadow-lg"
+      }
+    >
+      <a href="/dashboard-jual-seller">
+        <FontAwesomeIcon
+          icon={faPlus}
+          className="text-white custom-font-1 mr-2"
+        />
+        <span className="text-white custom-font-1">Jual</span>
+      </a>
     </div>
   );
 }

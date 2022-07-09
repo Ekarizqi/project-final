@@ -1,22 +1,18 @@
 import React from "react";
 import Jual from "../components/Jual";
 import NavbarHome from "../components/NavbarHome";
-import NavbarMobile from "../components/NavbarMobile";
+import NavbarHomeMobile from "../components/NavbarHomeMobile";
 import Home from "../pages/Home";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 export default function LayoutHome() {
-    const isMobile = useMediaQuery({minWidth: 600})
-    return (
-        <>
-        {
-        isMobile ? 
-        <NavbarHome />
-        :
-        <NavbarMobile />
-        }
-        <Home />
-        <Jual />
-        </>
-    )
+  const isMobile = useMediaQuery({ minWidth: 600 });
+
+  return (
+    <>
+      {isMobile ? <NavbarHome /> : <NavbarHomeMobile />}
+      <Home />
+      <Jual />
+    </>
+  );
 }

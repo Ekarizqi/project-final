@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-export default function NavbarMobile() {
+export default function NavbarHomeAccountMobile() {
   return (
     <>
       <nav className="px-4 py-4 custom-bg-nav custom-toogler">
         <div className="row">
-          <div className="col-2">
+          <div className="col-3">
             <button
               className="navbar-toggler"
               type="button"
@@ -25,25 +25,20 @@ export default function NavbarMobile() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent15">
               <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                  <a className="nav-link" href="#">
-                    Home <span className="sr-only">(current)</span>
+                <div className="nav-item active mb-1">
+                  <a className="nav-link text-white w-75 px-2 custom-border-search custom-button-auth" href="/register">
+                    Masuk <span className="sr-only">(current)</span>
                   </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Features
+                </div>
+                <div className="nav-item active mb-1">
+                  <a className="nav-link text-white px-2 w-50 custom-border-search custom-button-auth" href="/info-profile">
+                    Akun
                   </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Pricing
-                  </a>
-                </li>
+                </div>
               </ul>
             </div>
           </div>
-          <div className="col-10 pt-2">
+          <div className="col-9 pt-2">
             <form>
               <div className="inner-addon right-addon">
                 <FontAwesomeIcon
