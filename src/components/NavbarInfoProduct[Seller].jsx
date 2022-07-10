@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavbarInfoProduct() {
   return (
@@ -14,7 +13,7 @@ export default function NavbarInfoProduct() {
             className="custom-responsive-size"
           />
         </div>
-        <a className="navbar-brand custom-logo-navbar" href="#"></a>
+        <Link className="navbar-brand custom-logo-navbar" to={"#"}></Link>
         <span className="text-center m-auto">
           <span className="text-dark custom-title-nav font-weight-bold">
             Lengkapi Detail Produk

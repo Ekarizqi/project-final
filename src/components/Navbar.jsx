@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback } from "react";
 import { Link } from "react-router-dom";
 import { faBell, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -34,7 +32,7 @@ export default function Navbar() {
           <div className="row w-100">
             <div className="col-10">
               <div className="d-flex">
-                <a className="navbar-brand custom-logo-navbar" href="#"></a>
+                <Link className="navbar-brand custom-logo-navbar" to={"#"}></Link>
                 <form>
                   <div className="inner-addon right-addon custom-space-3">
                     <FontAwesomeIcon

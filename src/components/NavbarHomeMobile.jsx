@@ -1,8 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavbarHomeMobile() {
   return (
@@ -26,9 +25,9 @@ export default function NavbarHomeMobile() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent15">
               <ul className="navbar-nav mr-auto">
                 <div className="nav-item active">
-                  <a className="nav-link text-white px-2 custom-border-search custom-button-auth" href="/register">
+                  <Link className="nav-link text-white px-2 custom-border-search custom-button-auth" to={"/register"}>
                     Masuk <span className="sr-only">(current)</span>
-                  </a>
+                  </Link>
                 </div>
               </ul>
             </div>

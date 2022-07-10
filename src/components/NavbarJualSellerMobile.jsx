@@ -1,10 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { logout } from "../actions/auth";
 import { useEffect } from "react";
 import EventBus from "../common/EventBus";
+import { Link } from "react-router-dom";
 
 export default function NavbarJualSellerMobile() {
   const dispatch = useDispatch();
@@ -46,14 +45,14 @@ export default function NavbarJualSellerMobile() {
           >
             <ul className="navbar-nav mr-auto">
               <div className="nav-item active">
-                <a className="nav-link text-dark" href="#">
+                <Link className="nav-link text-dark" to={"#"}>
                   Home <span className="sr-only">(current)</span>
-                </a>
+                </Link>
               </div>
               <div className="nav-item">
-                <a className="nav-link text-dark" href="/" onClick={logOut}>
+                <Link className="nav-link text-dark" to={"/"} onClick={logOut}>
                   Logout
-                </a>
+                </Link>
               </div>
             </ul>
           </div>

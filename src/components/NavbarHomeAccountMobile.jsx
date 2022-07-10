@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavbarHomeAccountMobile() {
   return (
@@ -26,14 +27,9 @@ export default function NavbarHomeAccountMobile() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent15">
               <ul className="navbar-nav mr-auto">
                 <div className="nav-item active mb-1">
-                  <a className="nav-link text-white w-75 px-2 custom-border-search custom-button-auth" href="/register">
-                    Masuk <span className="sr-only">(current)</span>
-                  </a>
-                </div>
-                <div className="nav-item active mb-1">
-                  <a className="nav-link text-white px-2 w-50 custom-border-search custom-button-auth" href="/info-profile">
+                  <Link className="nav-link text-white px-2 w-50 custom-border-search custom-button-auth" to={"/info-profile"}>
                     Akun
-                  </a>
+                  </Link>
                 </div>
               </ul>
             </div>

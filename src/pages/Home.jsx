@@ -1,8 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const isMobile = useMediaQuery({ minWidth: 600 });
@@ -53,7 +53,7 @@ export default function Home() {
         {isMobile ? (
           <div className="d-flex justify-content-start">
             <div className="inner-addon left-addon mr-3 custom-space-5 custom-button-auth custom-border-button custom-border-search">
-              <a href="#">
+              <Link to={"#"}>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="text-white custom-fa"
@@ -63,11 +63,11 @@ export default function Home() {
                     Semua
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
+              <Link to={"#"}>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="text-dark custom-fa"
@@ -77,11 +77,11 @@ export default function Home() {
                     Hobi
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
+              <Link to={"#"}>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="text-dark custom-fa"
@@ -91,11 +91,11 @@ export default function Home() {
                     Kendaraan
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
+              <Link to={"#"}>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="text-dark custom-fa"
@@ -105,11 +105,11 @@ export default function Home() {
                     Baju
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="inner-addon left-addon mr-3 custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
+              <Link to={"#"}>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="text-dark custom-fa"
@@ -119,11 +119,11 @@ export default function Home() {
                     Elektronik
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="inner-addon left-addon custom-space-5 custom-bg-banner-2 custom-border-button-2 custom-border-search">
-              <a href="#">
+              <Link to={"#"}>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className="text-dark custom-fa"
@@ -133,14 +133,14 @@ export default function Home() {
                     Kesehatan
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         ) : (
           <div className="container-fluid custom-scroll">
             <div className="row flex-row flex-nowrap">
               <div className="col-5 mr-2 inner-addon border custom-button-auth custom-border-button custom-border-search w-100">
-                <a href="#">
+                <Link to={"#"}>
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
                     className="text-white custom-fa"
@@ -150,10 +150,10 @@ export default function Home() {
                       Semua
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-5 mr-2 inner-addon border custom-bg-banner-2 custom-border-button custom-border-search w-100">
-                <a href="#">
+                <Link to={"#"}>
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
                     className="text-dark custom-fa"
@@ -163,10 +163,10 @@ export default function Home() {
                       Hobi
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-5 mr-2 inner-addon border custom-bg-banner-2 custom-border-button custom-border-search w-100">
-                <a href="#">
+                <Link to={"#"}>
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
                     className="text-dark custom-fa"
@@ -176,10 +176,10 @@ export default function Home() {
                       Kendaraan
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-5 mr-2 inner-addon border custom-bg-banner-2 custom-border-button custom-border-search w-100">
-                <a href="#">
+                <Link to={"#"}>
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
                     className="text-dark custom-fa"
@@ -189,10 +189,10 @@ export default function Home() {
                       Baju
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-5 mr-2 inner-addon border custom-bg-banner-2 custom-border-button custom-border-search w-100">
-                <a href="#">
+                <Link to={"#"}>
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
                     className="text-dark custom-fa"
@@ -202,10 +202,10 @@ export default function Home() {
                       Elektronik
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-5 mr-2 inner-addon border custom-bg-banner-2 custom-border-button custom-border-search w-100">
-                <a href="#">
+                <Link to={"#"}>
                   <FontAwesomeIcon
                     icon={faMagnifyingGlass}
                     className="text-dark custom-fa"
@@ -215,7 +215,7 @@ export default function Home() {
                       Kesehatan
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -238,7 +238,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -259,7 +259,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -280,7 +280,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -288,7 +288,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -301,7 +301,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -309,7 +309,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -322,7 +322,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -330,7 +330,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -343,7 +343,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -351,7 +351,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -364,7 +364,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -372,7 +372,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -385,7 +385,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -393,7 +393,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -406,7 +406,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -414,7 +414,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -427,7 +427,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -435,7 +435,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -448,7 +448,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -456,7 +456,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -469,7 +469,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -477,7 +477,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -490,7 +490,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -498,7 +498,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -511,7 +511,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -519,7 +519,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -532,7 +532,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -540,7 +540,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -553,7 +553,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -561,7 +561,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_1.png")}
                     className="card-img-top"
@@ -574,7 +574,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -582,7 +582,7 @@ export default function Home() {
           <div className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <a href="/dashboard-product-buyer">
+                <Link to={"/dashboard-product-buyer"}>
                   <img
                     src={require("../images/jam_midlle_2.png")}
                     className="card-img-top"
@@ -595,7 +595,7 @@ export default function Home() {
                     <p className="text-muted custom-font-5">Aksesoris</p>
                     <p className="text-dark custom-font-1">Rp 250.000</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
