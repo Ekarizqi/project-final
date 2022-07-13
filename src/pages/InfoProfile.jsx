@@ -4,9 +4,53 @@ import { faArrowLeft, faCamera } from "@fortawesome/free-solid-svg-icons";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Axios } from "axios";
 
 export default function InfoProfile() {
   const isMobile = useMediaQuery({minWidth: 600})
+
+  const [name, setName] = useState("");
+  const [kota, setKota] = useState([]);
+  const [alamat, setAlamat] = useState("");
+  const [handphone, setHandphone] = useState("");
+  const navigate = useNavigate();
+
+  const onChangeName = (element) => {
+    const name = element.target.value;
+    setName(name);
+  };
+
+  const onChangeKota = (element) => {
+    const kota = element.target.value;
+    setKota(kota);
+  };
+
+  const onChangeAlamat = (element) => {
+    const alamat = element.target.value;
+    setAlamat(alamat);
+  };
+
+  const onChangeHandhphone = (element) => {
+    const handphone = element.target.value;
+    setHandphone(handphone);
+  };
+
+  const onPostData = async (element) => {
+    element.preventDefault();
+    const AddUpdateProfile = { name, kota, alamat, handphone };
+    await Axios.post("https://staging-fasthand-api.herokuapp.com/api/user/update", AddUpdateProfile)
+      .then((res) => {
+        if (res.status === 201) {
+          console.log("Dara Berhasil Ditambahkan!", res.data);
+          navigate.push({
+            pathname: "/home-account"
+          });
+        }
+      })
+      .catch((err) => console.log(err));
+  }
 
   return (
     <div className="container mt-5 py-4">
@@ -25,10 +69,10 @@ export default function InfoProfile() {
       </div>
 
       <div className={isMobile ? 'w-50 mx-auto' : 'w-100 mx-auto px-3'}>
-        <Form action={"/home-account"}>
+        <Form onSubmit={onPostData}>
           <div className="form-group mb-3">
             <label
-              htmlFor="nama"
+              htmlFor="name"
               className="text-dark font-weight-bold mb-1 custom-font-2"
             >
               Nama*
@@ -36,7 +80,10 @@ export default function InfoProfile() {
             <Input
               type="text"
               className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
+              id="name"
+              name="name"
               placeholder="Nama"
+              onChange={onChangeName}
             />
           </div>
 
@@ -54,11 +101,11 @@ export default function InfoProfile() {
                   aria-label="Default select example"
                 >
                   <option defaultValue={{ value: null }}>Pilih Kota</option>
-                  <option value="Jember">Jember</option>
-                  <option value="Jakarta">Jakarta</option>
-                  <option value="Surabaya">Surabaya</option>
-                  <option value="Malang">Malang</option>
-                  <option value="Bali">Bali</option>
+                  <option value="Jember" onChange={onChangeKota}>Jember</option>
+                  <option value="Jakarta" onChange={onChangeKota}>Jakarta</option>
+                  <option value="Surabaya" onChange={onChangeKota}>Surabaya</option>
+                  <option value="Malang" onChange={onChangeKota}>Malang</option>
+                  <option value="Bali" onChange={onChangeKota}>Bali</option>
                 </select>
               </div>
             </div>
@@ -74,13 +121,16 @@ export default function InfoProfile() {
             <Input
               type="text"
               className="form-control p-2 pt-4 pl-4  pb-5 custom-border-auth custom-font-1"
+              id="alamat"
+              name="alamat"
               placeholder="Contoh: Jalan Ikan Hiu 33"
+              onChange={onChangeAlamat}
             />
           </div>
 
           <div className="form-group">
             <label
-              htmlFor="nohandphone"
+              htmlFor="handphone"
               className="text-dark font-weight-bold mb-1 custom-font-2"
             >
               No Handphone*
@@ -88,7 +138,10 @@ export default function InfoProfile() {
             <Input
               type="text"
               className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
+              id="handphone"
+              name="handphone"
               placeholder="Contoh: +628123456789"
+              onChange={onChangeHandhphone}
             />
           </div>
 

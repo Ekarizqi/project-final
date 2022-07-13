@@ -9,9 +9,20 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { useLocation } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 export default function DashboardJualSeller() {
   const isMobile = useMediaQuery({ minWidth: 600 });
+
+  const alert = useLocation();
+
+  const history = createBrowserHistory();
+  if (history.location?.state?.status) {
+    const state = { ...history.location.state };
+    delete state.status;
+    history.replace({ ...history.location, state });
+  }
 
   return (
     <div className="custom-overflow-x-hidden">
@@ -21,6 +32,14 @@ export default function DashboardJualSeller() {
             <p className="text-dark font-weight-bold custom-font-6">
               Daftar Jual Saya
             </p>
+
+            {alert?.state?.status ? (
+              <div className="mx-auto bg-success text-center text-white py-2 border rounded w-25">
+                Data Berhasil Disimpan
+              </div>
+            ) : (
+              ""
+            )}
 
             <div className="border my-3 px-3 pt-3 custom-border-auth">
               <div className="row">

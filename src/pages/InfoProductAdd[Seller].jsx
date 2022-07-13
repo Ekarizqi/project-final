@@ -4,13 +4,68 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
+import { Axios } from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function InfoProductAddSeller() {
-  const isMobile = useMediaQuery({minWidth: 600})
+  const isMobile = useMediaQuery({ minWidth: 600 });
+
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
+  const [category, setCategory] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState([]);
+  const navigate = useNavigate();
+
+  const onChangeName = (element) => {
+    const name = element.target.value;
+    setName(name);
+  };
+
+  const onChangePrice = (element) => {
+    const price = element.target.value;
+    setPrice(price);
+  };
+
+  const onChaneCategory = (element) => {
+    const category = element.target.value;
+    setCategory(category);
+  };
+
+  const onChangeDescription = (element) => {
+    const description = element.target.value;
+    setDescription(description);
+  };
+
+  const onChangeImage = (element) => {
+    const image = element.target.value;
+    setImage(image);
+  };
+
+  const onPostData = async (element) => {
+    element.preventDefault();
+    const AddProdcuts = { name, price, category, description, image };
+    await Axios.post(
+      "https://staging-fasthand-api.herokuapp.com/api/produk/add",
+      AddProdcuts
+    )
+      .then((res) => {
+        if (res.status === 201) {
+          console.log("Data berhasil ditambahkan", res.data);
+          navigate.push({
+            pathname: "/dashboard-jual-seller",
+            state: { status: true },
+          });
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="container mt-5 pt-4">
-      <div className={isMobile ? 'w-75 mx-auto' : 'w-100 mx-auto'}>
+      <div className={isMobile ? "w-75 mx-auto" : "w-100 mx-auto"}>
         <div className="custom-responsive-display">
           <FontAwesomeIcon
             icon={faArrowLeft}
@@ -18,11 +73,11 @@ export default function InfoProductAddSeller() {
           />
         </div>
         <span>
-          <div className={isMobile ? 'w-50 mx-auto' : 'w-100 mx-auto px-3'}>
-            <Form action={"/dashboard-product-seller"}>
+          <div className={isMobile ? "w-50 mx-auto" : "w-100 mx-auto px-3"}>
+            <Form onSubmit={onPostData}>
               <div className="form-group mb-3">
                 <label
-                  htmlFor="namaproduk"
+                  htmlFor="name"
                   className="text-dark font-weight-bold mb-1 custom-font-2"
                 >
                   Nama Produk
@@ -30,13 +85,16 @@ export default function InfoProductAddSeller() {
                 <Input
                   type="text"
                   className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
+                  id="name"
+                  name="name"
                   placeholder="Nama Produk"
+                  onChange={onChangeName}
                 />
               </div>
 
               <div className="form-group mb-3">
                 <label
-                  htmlFor="hargaproduk"
+                  htmlFor="price"
                   className="text-dark font-weight-bold mb-1 custom-font-2"
                 >
                   Harga Produk
@@ -44,13 +102,16 @@ export default function InfoProductAddSeller() {
                 <Input
                   type="text"
                   className="form-control p-2 pl-4 custom-font-1 custom-border-auth"
+                  id="price"
+                  name="price"
                   placeholder="Rp 0,00"
+                  onChange={onChangePrice}
                 />
               </div>
 
               <div className="form-group mb-3">
                 <label
-                  htmlFor="kategori"
+                  htmlFor="category"
                   className="text-dark font-weight-bold mb-1 custom-font-2"
                 >
                   Kategori
@@ -64,11 +125,21 @@ export default function InfoProductAddSeller() {
                       <option defaultValue={{ value: null }}>
                         Pilih Kategori
                       </option>
-                      <option value="Jember">Jam Tangan</option>
-                      <option value="Jakarta">Elektronik</option>
-                      <option value="Surabaya">Komputer &amp; Aksesoris</option>
-                      <option value="Malang">Hobi &amp; Koleksi</option>
-                      <option value="Bali">Perawatan &amp; Kecantikan</option>
+                      <option value="Jam Tangan" onChange={onChaneCategory}>
+                        Jam Tangan
+                      </option>
+                      <option value="Elektronik" onChange={onChaneCategory}>
+                        Elektronik
+                      </option>
+                      <option value="Komputer" onChange={onChaneCategory}>
+                        Komputer &amp; Aksesoris
+                      </option>
+                      <option value="Hobi" onChange={onChaneCategory}>
+                        Hobi &amp; Koleksi
+                      </option>
+                      <option value="Perawatan" onChange={onChaneCategory}>
+                        Perawatan &amp; Kecantikan
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -76,7 +147,7 @@ export default function InfoProductAddSeller() {
 
               <div className="form-group">
                 <label
-                  htmlFor="password"
+                  htmlFor="description"
                   className="text-dark font-weight-bold mb-1 custom-font-2"
                 >
                   Deskripsi
@@ -84,7 +155,10 @@ export default function InfoProductAddSeller() {
                 <Input
                   type="text"
                   className="form-control p-2 pl-4 pt-4 pb-5 custom-font-1 custom-border-auth"
+                  id="description"
+                  name="description"
                   placeholder="Contoh: Jalan Ikan Hiu 33"
+                  onChange={onChangeDescription}
                 />
               </div>
 
@@ -95,12 +169,19 @@ export default function InfoProductAddSeller() {
                 >
                   Foto Produk
                 </label>
-                <div className="text-center ml-1 row align-items-center custom-bg-photo-product">
-                  <FontAwesomeIcon
-                    icon={faPlusSquare}
-                    className="m-auto custom-font-3"
-                  />
-                </div>
+                <Input
+                  type={[]}
+                  id="image"
+                  name="image"
+                  onChange={onChangeImage}
+                >
+                  <div className="text-center ml-1 row align-items-center custom-bg-photo-product">
+                    <FontAwesomeIcon
+                      icon={faPlusSquare}
+                      className="m-auto custom-font-3"
+                    />
+                  </div>
+                </Input>
               </div>
 
               <div className="row">
