@@ -57,7 +57,7 @@ export default function Login(props) {
     if (checkBtn.current.context._errors.length === 0) {
       dispatch(login(email, password))
         .then(() => {
-          if (user?.roles[0] === "ROLE_ACCOUNT") {
+          if (user?.code === 200) {
             props.history.push("/dashboard-user");
             window.location.reload();
           }
@@ -73,7 +73,7 @@ export default function Login(props) {
   const isMobile = useMediaQuery({minWidth: 600})
 
   if (isLoggedIn) {
-    if (user?.roles[0] === "ROLE_ACCOUNT") {
+    if (user?.code === 200) {
       return <Navigate to={"/home-account"} />;
     }
   }
