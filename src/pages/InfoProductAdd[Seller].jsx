@@ -169,7 +169,7 @@ export default function InfoProductAddSeller() {
                 >
                   Foto Produk
                 </label>
-                <Input
+                {/* <Input
                   type={[]}
                   id="image"
                   name="image"
@@ -181,7 +181,7 @@ export default function InfoProductAddSeller() {
                       className="m-auto custom-font-3"
                     />
                   </div>
-                </Input>
+                </Input> */}
               </div>
 
               <div className="row">
