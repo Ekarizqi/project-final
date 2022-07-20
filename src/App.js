@@ -49,7 +49,7 @@ function App() {
           element={<LayoutDashboardJualDiminatiSeller />}
         />
         <Route
-          path={"/dashboard-product-buyer"}
+          path={"/dashboard-product-buyer/:idProduk"}
           element={<LayoutDashboardProductBuyer />}
         />
         <Route

@@ -250,9 +250,9 @@ export default function Home() {
           <div key={produk.idProduk} className={isMobile ? "col-md-2 mt-3" : "col-6 mt-3"}>
             <div className="border rounded px-1 py-1">
               <div className="card border-0">
-                <Link to={"/dashboard-product-buyer"}>
+                <Link to={`/dashboard-product-buyer/${produk.idProduk}`}>
                   <img
-                    src={produk.gambarProdukList[1]}
+                    src={`${produk.gambarProdukList[1]}`}
                     className="card-img-top"
                     alt="jam"
                   />
