@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { Modal } from "react-bootstrap";
 import NotifikasiHargaTawar from "../components/NotifikasiHargaTawar[Buyer]";
 import { useMediaQuery } from "react-responsive";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { useParams } from "react-router";
+import axios from "axios";
+//import { useDispatch } from "react-redux/es/exports";
 
 export default function DashboardProductBuyer() {
   const isMobile = useMediaQuery({ minWidth: 600 });
@@ -14,8 +17,37 @@ export default function DashboardProductBuyer() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const params = useParams();
+  console.log("ini params:", params);
+  const [produk, setProduk] = useState([]);
+  const [loading, setLoading] = useState(false);
+  //const dispatch = useDispatch ();
+
+  const fetchData = async () => {
+    setLoading(true);
+    const response = await axios
+    .get(`https://staging-fasthand-api.herokuapp.com/api/produk/${params.idProduk}`)
+    .catch((err) => {
+      console.log("err",err);
+    });
+    setProduk(response.data.data);
+    console.log(produk);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+
+    fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="custom-overflow-x-hidden">
+      {loading === true ? (
+        <>loading</>
+      ) : (
+        <>
+        
       {isMobile
         ?
         <div className="container mt-5 pt-4">
@@ -25,7 +57,7 @@ export default function DashboardProductBuyer() {
                 <Carousel showArrows={true} showThumbs={false} showStatus={false}>
                   <div>
                     <img
-                      src={require("../images/jam.png")}
+                      src={`${produk.gambarProdukList}`}
                       alt="jam"
                       className="w-100"
                     />
@@ -33,7 +65,7 @@ export default function DashboardProductBuyer() {
 
                   <div>
                     <img
-                      src={require("../images/jam.png")}
+                      src={`${produk.gambarProdukList}`}
                       alt="jam"
                       className="w-100"
                     />
@@ -51,11 +83,11 @@ export default function DashboardProductBuyer() {
 
               <div className="col-md-4">
                 <div className="border px-3 py-3 custom-border-auth">
-                  <p className="text-dark font-weight-bold">Jam Tangan Casio</p>
+                  <p className="text-dark font-weight-bold">{produk.namaProduk}</p>
                   <p className="text-muted custom-font-1 custom-space-top">
                     Aksesoris
                   </p>
-                  <p className="text-dark custom-space-top">Rp 250.000</p>
+                  <p className="text-dark custom-space-top">Rp {produk.hargaProduk}</p>
 
                   <button
                     onClick={handleShow}
@@ -81,12 +113,12 @@ export default function DashboardProductBuyer() {
                 <div className="border mt-3 px-2 py-2 custom-border-auth">
                   <div className="row">
                     <div className="col-md-3">
-                      <img src={require("../images/seller.png")} alt="seller" />
+                      <img src={`${produk.gambarPenjual}`} alt="seller" />
                     </div>
 
                     <div className="col-md-9">
                       <p className="text-dark font-weight-bold custom-font-1">
-                        Nama Penjual
+                        {produk.namaPenjual}
                       </p>
                       <p className="text-muted custom-font-5 custom-space-top">
                         Kota
@@ -105,21 +137,8 @@ export default function DashboardProductBuyer() {
                   </p>
 
                   <p className="text-muted custom-font-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br /> <br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {produk.deskripsiProduk}                    <br /> <br />
+                    {produk.deskripsiProduk}                   
                   </p>
                 </div>
               </div>
@@ -161,11 +180,11 @@ export default function DashboardProductBuyer() {
             <div className="col-md-4 px-5">
               <div className="container-fluid custom-top-minus">
                 <div className="border px-3 py-3 custom-border-auth bg-white">
-                  <p className="text-dark font-weight-bold">Jam Tangan Casio</p>
+                  <p className="text-dark font-weight-bold">{produk.namaProduk}</p>
                   <p className="text-muted custom-font-1 custom-space-top">
                     Aksesoris
                   </p>
-                  <p className="text-dark custom-space-top">Rp 250.000</p>
+                  <p className="text-dark custom-space-top">Rp {produk.hargaProduk}</p>
 
                   <button
                     onClick={handleShow}
@@ -191,12 +210,12 @@ export default function DashboardProductBuyer() {
                 <div className="border mt-3 px-2 py-2 custom-border-auth">
                   <div className="row">
                     <div className="col-md-3">
-                      <img src={require("../images/seller.png")} alt="seller" />
+                      <img src={`${produk.gambarPenjual}`} alt="seller" />
                     </div>
 
                     <div className="col-md-9">
                       <p className="text-dark font-weight-bold custom-font-1">
-                        Nama Penjual
+                      {produk.namaPenjual}
                       </p>
                       <p className="text-muted custom-font-5 custom-space-top">
                         Kota
@@ -217,21 +236,8 @@ export default function DashboardProductBuyer() {
                   </p>
 
                   <p className="text-muted custom-font-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    <br /> <br />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {produk.deskripsiProduk}                    <br /> <br />
+                    {produk.deskripsiProduk}                   
                   </p>
                 </div>
               </div>
@@ -239,6 +245,8 @@ export default function DashboardProductBuyer() {
           </div>
         </div>
       }
+      </>
+      )}
     </div>
   );
 }
