@@ -6,3 +6,6 @@ export const LOGOUT = "LOGOUT";
 
 export const SET_MESSAGE = "SET_MESSAGE";
 export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
+
+export const GET_PRODUCT_BY_SEARCH = "GET_PRODUCT_BY_SEARCH";
+export const GET_PRODUCT_NULL = "GET_PRODUCT_NULL"
