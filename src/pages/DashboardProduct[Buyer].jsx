@@ -40,6 +40,7 @@ export default function DashboardProductBuyer() {
     fetchData();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  console.log(produk.kota?.idKota,"kota")
   // const images = produk.gambarProdukList
   // console.log(images,"image")
   return (
@@ -124,7 +125,7 @@ export default function DashboardProductBuyer() {
                         {produk.namaPenjual}
                       </p>
                       <p className="text-muted custom-font-5 custom-space-top">
-                        Kota
+                        {produk.kota?.namaKota}
                       </p>
                     </div>
                   </div>
