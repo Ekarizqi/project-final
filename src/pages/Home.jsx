@@ -252,7 +252,7 @@ export default function Home() {
               <div className="card border-0">
                 <Link to={`/dashboard-product-buyer/${produk.idProduk}`}>
                   <img
-                    src={`${produk.gambarProdukList[1]}`}
+                    src={`${produk.gambarProdukList[0]}`}
                     className="card-img-top"
                     alt="jam"
                   />

@@ -31,7 +31,7 @@ export default function DashboardProductBuyer() {
       console.log("err",err);
     });
     setProduk(response.data.data);
-    console.log(produk);
+    //console.log(produk,"data");
     setLoading(false);
   };
 
@@ -40,7 +40,9 @@ export default function DashboardProductBuyer() {
     fetchData();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
+  console.log(produk.kota?.idKota,"kota")
+  // const images = produk.gambarProdukList
+  // console.log(images,"image")
   return (
     <div className="custom-overflow-x-hidden">
       {loading === true ? (
@@ -56,8 +58,18 @@ export default function DashboardProductBuyer() {
               <div className="col-md-8">
                 <Carousel showArrows={true} showThumbs={false} showStatus={false}>
                   <div>
-                    <img
-                      src={`${produk.gambarProdukList}`}
+                    
+                    <img 
+                      src={`${produk.gambarProdukList?.[0]}`}
+                      alt="jam"
+                      className="w-100"
+                    />
+                
+                  </div>
+
+                  <div>
+                    <img 
+                      src={`${produk.gambarProdukList?.[1]}`}
                       alt="jam"
                       className="w-100"
                     />
@@ -65,15 +77,7 @@ export default function DashboardProductBuyer() {
 
                   <div>
                     <img
-                      src={`${produk.gambarProdukList}`}
-                      alt="jam"
-                      className="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <img
-                      src={require("../images/jam.png")}
+                      src={`${produk.gambarProdukList?.[1]}`}
                       alt="jam"
                       className="w-100"
                     />
@@ -121,7 +125,7 @@ export default function DashboardProductBuyer() {
                         {produk.namaPenjual}
                       </p>
                       <p className="text-muted custom-font-5 custom-space-top">
-                        Kota
+                        {produk.kota?.namaKota}
                       </p>
                     </div>
                   </div>
