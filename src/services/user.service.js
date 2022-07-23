@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const header = { header: authHeader(), 'Content-type': 'application/json'};
+// const header = { header: authHeader(), 'Content-type': 'application/json'};
 
 const API_URL = "https://staging-fasthand-api.herokuapp.com/api/";
 
@@ -20,13 +20,14 @@ const getProductBySearch = (search) => {
 //   return axios.get(API_URL + "all");
 // };
 
-// const getUserBoard = () => {
-//   return axios.get(API_URL + "user", { headers: authHeader() });
-// };
+const getUserBoard = () => {
+  return axios.get(API_URL + "user", { headers: authHeader() });
+};
 
-
+// eslint-disable-next-line
 export default {
-  getAllProduct
+  getAllProduct,
+  getProductBySearch,
   // getPublicContent,
-  // getUserBoard,
+  getUserBoard,
 };
