@@ -1,3 +1,8 @@
+#Link 
+[deploy] (https://secondhand-2.netlify.app)
+[api] (https://staging-fasthand-api.herokuapp.com/swagger-ui/index.html#/)
+[Trello] (https://trello.com/b/xjp3sQZr/project-final)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
